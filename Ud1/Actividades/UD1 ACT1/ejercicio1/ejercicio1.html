@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mi Web</h1>
+        <nav>
+            <a href="#principal">Principal</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#cv">CV</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section id="principal">
+            <h2>Principal</h2>
+            <p>Aqui pongo algo sobre mi, Algo original y divertido</p>
+            <p>Acompaña la descripcion con una imagen tuya</p>
+            <figure>
+                <img src="img/OIP.jpeg" alt="">
+                <figcaption>Este soy yo</figcaption>
+            </figure>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <table>
+                <caption>Principales proyectos donde he trabajado</caption>
+                <tr>
+                    <td>Age of Styles</td>
+                    <td>World of warcraft</td>
+                    <td>Donkey Island</td>
+                </tr>
+                <tr>
+                    <td>Disemble studios</td>
+                    <td>Marie Blizzard</td>
+                    <td>Chucastarts</td>
+                </tr>
+                <tr>
+                    <td>Un gran juego desarrollado entre 4 amigos</td>
+                    <td>Me valio para aprender un monton</td>
+                    <td>Mi primer gran proyecto, le tengo mucho cariño</td>
+                </tr>
+            </table>
+        </section>
+        <div id="cv">
+            <h2>CV</h2>
+            <p>Aqui iria una lista con mi CV. Cada item debe ir en un punto diferenciado</p>
+            <ul>
+                <li>Master en forlayos y superficies cuadrupedas</li>
+                <li>Licenciado en psicologia por la universidad de Wisconsin</li>
+            </ul>
+        </div>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Utiiza el formulario si quieres contactar conmigo</p>
+            <form id="formulario-contacto" action="ejemplo.php" method="post">
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" placeholder="Introduce tu nombre">
+                </div>
+                <div>
+                    <label for="surname">Apellidos:</label>
+                    <input type="text" name="surname" id="surname" placeholder="Introduce tus apellidos">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Introduce tu email">
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+
+        <p>© IES Monte naranco, 2022</p>
+
+    </footer>
+</body>
+
+</html>
