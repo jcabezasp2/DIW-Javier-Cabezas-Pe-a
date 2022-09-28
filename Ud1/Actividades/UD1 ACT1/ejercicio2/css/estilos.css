@@ -27,11 +27,11 @@ body{
     padding: 2em;
 }
 
-.lineaformulario {
+.linea_formulario {
     display:flex;
 }
 
-.lineaformulario {
+.linea_formulario {
     width: 100%;
     padding-bottom: .5em;
     padding-top: 1em;
