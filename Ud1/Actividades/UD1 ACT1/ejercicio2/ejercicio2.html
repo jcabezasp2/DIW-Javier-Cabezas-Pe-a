@@ -8,23 +8,26 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>Formulario de alta</h1>
-    <form action="formulario.php" method="post" id="formulario">
+    <form action="procesa-formulario.php" method="post" id="formulario">
+        <div class="linea_formulario">
+            <h1>Formulario de alta</h1>
+        </div>
         <div class="linea_formulario">
             <label for="name">Nombre</label>
             <div class="contenido">
-                <input type="text" name="name" id="name" list="nombres_sugeridos" autocomplete="off" autofocus>
+                <input type="text" name="name" id="name" list="nombres_sugeridos" autocomplete="nope" autofocus required> 
+                <!-- Con autocomplete="off" el navegador seguia autocompletando, pero introduciendo un valor no valido (nope) deja de intentarlo -->
                 <datalist id="nombres_sugeridos">
-                    <option value="Maria">Maria</option>
-                    <option value="Ana">Ana</option>ç
-                    <option value="Javier">Javier</option>
+                    <option value="Antonio">Antonio</option>
+                    <option value="María Carmen">María Carmen</option>ç
+                    <option value="María">María</option>
+                    <option value="Manuel">Manuel</option>
                     <option value="Jose">Jose</option>
-                    <option value="Marcos">Marcos</option>
-                    <option value="Jorge">Jorge</option>
-                    <option value="Miguel">Miguel</option>ç
-                    <option value="Ricardo">Ricardo</option>
-                    <option value="Federico">Federico</option>
-                    <option value="Natalia">Natalia</option>
+                    <option value="Francisco">Francisco</option>
+                    <option value="Carmen">Carmen</option>ç
+                    <option value="David">David</option>
+                    <option value="Juan">Juan</option>
+                    <option value="Javier">Javier</option>
                 </datalist>
                 <span class="asterisco">*</span>
             </div>
@@ -32,7 +35,7 @@
         <div class="linea_formulario">
             <label for="surname">Apellido</label>
             <div class="contenido">
-                <input type="text" name="name" id="surname" autocomplete="off">
+                <input type="text" name="surname" id="surname" autocomplete="nope" required> 
                 <span class="asterisco">*</span>
             </div>
         </div>
@@ -45,7 +48,7 @@
         <div class="linea_formulario">
             <label for="dni">DNI</label>
             <div class="contenido">
-                <input type="text" name="dni" id="dni" placeholder="77711823M"  autocomplete="off" pattern="/D {8}) ( [-]?) ( [A-Z] {1}/g">
+                <input type="text" name="dni" id="dni" placeholder="77711823M"  autocomplete="nope" pattern="^\d{8}[A-Z,a-z]{1}$">
             </div>
         </div>
         <div class="linea_formulario">
@@ -93,19 +96,22 @@
             </div>
         </div>
         <div> 
+                <p>
                 <input type="checkbox" name="suscribirme" id="suscribirme">
                 <label for="suscribirme">Suscribirme al boletin de novedades</label> 
+            </p>
         </div>
         <div>
-            
-                <input type="checkbox" name="imformarme" id="imformarme">
+                <p>
+                <input type="checkbox" name="imformarme" id="informarme">
                 <label for="imformarme">Informarme sobre ofertas</label>
+            </p>
         </div>
         <div class="linea_formulario">
             <label for="">Producto favorito</label>
             <div class="contenido">
                 <select name="favorito" id="favorito" required>
-                    <option value=" " >Elige una opcion</option>
+                    <option value="" selected disabled >Elige una opcion</option>
                     <option value="bicicleta">Bicicleta</option>
                     <option value="Taladro">Taladro</option>
                     <option value="Cama">Cama</option>
@@ -118,7 +124,7 @@
         <div class="linea_formulario">
             <label for="comentario">Comentario</label>
             <div class="contenido">
-                <input type="text" name="comentario" id="comentario">
+                <textarea name="comentario" id="comentario" rows="12" cols="40">Introduce tu...</textarea>
             </div>
         </div>
         <div class="linea_formulario">
