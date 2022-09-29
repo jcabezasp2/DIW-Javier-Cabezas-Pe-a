@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+
+#contenedor {
+    display: flex;
+
+}
