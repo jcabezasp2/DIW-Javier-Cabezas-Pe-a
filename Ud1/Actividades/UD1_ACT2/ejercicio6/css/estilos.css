@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+
+}
+
+#imagenes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url("img/sobre.jpg");
+}
+
+.imagen{
+    width: 100px;
+    border: 5px solid transparent;
+    border-image: url("img/sello.png");
+    border-image-slice: 33%;
+    border-image-repeat: round;
+}
+
+#a{
+    transform: rotate(12deg);
+}
+
+#b{
+
+}
+
+#c{
+    transform: rotate(-10deg);
+}
+
+#d{
+    transform: rotate(5deg);
+}
