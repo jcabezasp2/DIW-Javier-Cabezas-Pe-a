@@ -4,26 +4,23 @@
 }
 
 body{
-
+    width: 80%;
+    margin: auto;
 }
 
-#imagenes{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 
 #container {
-    width: 80%;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr 1.5fr;
+    column-gap: 12%;
+    padding: 5%;
+    align-items: end;
     justify-content: space-evenly;
     background-image: url("img/sobre.jpg");
 }
 
 .imagen{
-    width: 100px;
-    border: 5px solid transparent;
+    border: 10px solid transparent;
     border-image: url("img/sello.png");
     border-image-slice: 33%;
     border-image-repeat: round;
@@ -31,16 +28,22 @@ body{
 
 #a{
     transform: rotate(12deg);
+    width: 136%;
+
 }
 
 #b{
-
+    width: 179%;
 }
 
 #c{
     transform: rotate(-10deg);
+    width: 123%;
 }
 
 #d{
-    transform: rotate(5deg);
+    transform: rotate(9deg);
+    width: 122%;
+    position: relative;
+    right: 14%;
 }

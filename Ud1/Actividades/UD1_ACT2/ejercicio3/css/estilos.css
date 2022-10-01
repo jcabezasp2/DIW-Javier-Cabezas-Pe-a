@@ -11,17 +11,20 @@ margin: auto;
 #contenedor {
     display: flex;
     border: 3px black solid;   
-    height: 25vh;
+    height: auto;
+    width: fit-content;
+    margin: auto;
     align-items: center;
     background-color: rgb(177, 179, 198);
+    padding: 2% 1%;
 }
 
 #logos{
     display: flex;
     justify-content: space-around;
-    width: 80%;
     margin: auto;
     height: 70%;
+
 }
 
 .logo{

@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    width: 80%;
+    margin: auto;
+}
+
+
+#container {
+    width: 800px;
+    height: 400px;
+    margin:auto;
+    background-image: url("img/tienda.png"), url("img/tienda.png"), url("img/paisano.png"), url("img/fondo.png");
+    background-size: 75px, 75px, 200px, 800px 400px ;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 92% 97%, 15% 92%, 47% 92%;
+}
