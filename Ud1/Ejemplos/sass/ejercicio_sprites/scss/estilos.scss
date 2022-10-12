@@ -16,12 +16,12 @@ margin: auto;
     display: flex;
     border: 3px black solid;   
     height: auto;
-    width: fit-content;
+    width: min-content;
     margin: auto;
     align-items: center;
     background-color: rgb(177, 179, 198);
     padding: 2% 1%;
-}
+} 
 
 #logos{
     display: flex;

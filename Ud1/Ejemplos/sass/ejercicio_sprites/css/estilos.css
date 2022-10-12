@@ -12,9 +12,9 @@ body {
   display: flex;
   border: 3px black solid;
   height: auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   margin: auto;
   align-items: center;
   background-color: rgb(177, 179, 198);
