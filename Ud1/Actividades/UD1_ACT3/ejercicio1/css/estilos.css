@@ -1,0 +1,26 @@
+body {
+  background-color: grey;
+}
+
+#container {
+  width: 80%;
+  padding: 1%;
+  margin: 0 auto;
+  background-color: white;
+}
+#container article {
+  width: 20vw;
+  margin: auto;
+  background-color: grey;
+  padding: 1%;
+}
+#container article img {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+}
+#container article p {
+  width: 90%;
+  background-color: lightgrey;
+  margin: auto;
+}

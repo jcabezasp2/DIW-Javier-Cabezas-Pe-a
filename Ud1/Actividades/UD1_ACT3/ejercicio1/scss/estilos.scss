@@ -1,0 +1,31 @@
+@use "sass:color";
+@use "sass:list";
+
+body{
+    background-color: grey;
+}
+
+#container{
+    width: 80%;
+    padding: 1%;
+    margin: 0 auto;
+    background-color: white;
+
+    article{
+        width: 20vw;
+        margin: auto;
+        background-color: grey;
+        padding: 1%;
+        img{
+            display: block;
+            width: auto;
+            margin: 0 auto;
+        }
+
+        p{
+            width: 90%;
+            background-color: lightgrey;
+            margin: auto;
+        }
+    }
+} 
