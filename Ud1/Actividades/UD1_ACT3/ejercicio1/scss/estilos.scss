@@ -1,31 +1,41 @@
 @use "sass:color";
 @use "sass:list";
 
+$color_fondo: rgb(190, 187, 180);
+$color_titulo: rgb(212, 211, 208);
+
 body{
-    background-color: grey;
+    background-color: $color_fondo;
 }
 
 #container{
     width: 80%;
-    padding: 1%;
+    padding: 1% 0%;
     margin: 0 auto;
     background-color: white;
 
-    article{
-        width: 20vw;
+    article{      
+        width: -moz-fit-content;
+        width: fit-content;
         margin: auto;
-        background-color: grey;
+        background-color: $color_fondo;
         padding: 1%;
+        border-radius: 5px;
         img{
             display: block;
             width: auto;
             margin: 0 auto;
+            border-radius: 5px;
         }
-
+ 
         p{
-            width: 90%;
-            background-color: lightgrey;
+            width: 21vw;
+            background-color: $color_titulo;
             margin: auto;
+            text-align: center;
+            border-radius: 2px;
+            margin-top: 2vh;
+            padding: 4%;
         }
     }
 } 

@@ -15,7 +15,6 @@ header, footer{
     background-color: $color_cabecera;
     color: $color_letras_cabecera;
     text-align: center;
-    padding: 1%;
 }
 
 #container{
@@ -25,13 +24,43 @@ header, footer{
     font-family: 'Bowlby One SC';
 
     header{
-        h1{
-            font-size: 2.2em;
-            padding-bottom: 4vh;
+
+        #titulo{
+            padding: 2%;
+            h1{
+                font-size: 2.2em;
+                padding-bottom: 4vh;
+            }
+    
+            h3{
+                font-size: 1.3em;
+            }
         }
 
-        h3{
-            font-size: 1.3em;
+
+        #menuYBanner{
+            height: 250px;
+            nav{
+                background-color: white;
+                float: left;
+                width: 23%;
+                height: 100%;
+                color: $color_cabecera;
+                font-size: small;
+                li{
+                    height: 50px;
+                    padding: 10%;
+                }
+            }
+
+            #banner{
+                width: 77%;
+                height: 250px;
+                background-image: url(img/movies.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                float: right;
+            }
         }
     }
     main{
@@ -81,11 +110,15 @@ header, footer{
             margin-right: 0.8vw;
         }
 
-        .limpiar{
-            clear: both;
-        }
+        
     
     }
-
+    footer{
+        padding: 1%;
+    }
 
 } 
+
+.limpiar{
+    clear: both;
+}
