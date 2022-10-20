@@ -10,26 +10,27 @@ body{
 
 #container{
     width: 80%;
+    height: 100vh;
     padding: 1% 0%;
     margin: 0 auto;
     background-color: white;
 
     article{      
-        width: -moz-fit-content;
-        width: fit-content;
+        width: 40%;
         margin: auto;
         background-color: $color_fondo;
         padding: 1%;
         border-radius: 5px;
+        margin-top: 10vh;
         img{
             display: block;
-            width: auto;
+            width: 80%;
             margin: 0 auto;
             border-radius: 5px;
         }
  
         p{
-            width: 21vw;
+            width: 90%;
             background-color: $color_titulo;
             margin: auto;
             text-align: center;

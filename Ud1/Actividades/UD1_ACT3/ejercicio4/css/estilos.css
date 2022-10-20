@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: Verdana;
 }
 
 body {
@@ -10,7 +11,6 @@ header, footer {
   background-color: rgb(52, 48, 44);
   color: rgb(212, 216, 214);
   text-align: center;
-  padding: 1%;
 }
 
 #container {
@@ -18,18 +18,48 @@ header, footer {
   margin: 0 auto;
   background-color: white;
 }
-#container header {
-  font-family: "Bowlby One SC";
+#container header #titulo {
+  padding: 2%;
 }
-#container header h1 {
+#container header #titulo h1 {
   font-size: 2.2em;
   padding-bottom: 2%;
+  font-family: "Bowlby One SC";
 }
-#container header h3 {
+#container header #titulo h3 {
   font-size: 1.3em;
+}
+#container header #menuYBanner nav {
+  background-color: white;
+  color: rgb(52, 48, 44);
+  font-size: small;
+}
+#container header #menuYBanner nav li {
+  display: inline-block;
+  padding: 1%;
+}
+#container header #menuYBanner nav li:hover {
+  background-color: rgb(255, 220, 12);
+}
+#container header #menuYBanner #banner {
+  width: 100%;
+  height: 250px;
+  background-image: url(img/movies.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#container header #menuYBanner #banner h2 {
+  font-size: 3em;
+  color: white;
+  background-color: rgba(190, 187, 180, 0.5);
+  position: relative;
+  top: 40%;
 }
 #container main {
   padding: 2% 3%;
+}
+#container main article {
+  display: inline-block;
 }
 #container main .linea {
   display: inline-block;
@@ -68,4 +98,13 @@ header, footer {
 }
 #container main .limpiar {
   clear: both;
+}
+#container footer {
+  padding: 2% 3% 3% 2%;
+}
+#container footer .alinear_izq {
+  float: left;
+}
+#container footer .alinear_der {
+  float: right;
 }
