@@ -1,8 +1,6 @@
 @use "sass:color";
 @use "sass:list";
-
-$color_fondo: rgb(190, 187, 180);
-$color_titulo: rgb(212, 211, 208);
+@import "colores.scss";
 
 body{
     background-color: $color_fondo;
@@ -35,7 +33,7 @@ body{
             margin: auto;
             text-align: center;
             border-radius: 2px;
-            margin-top: 2vh;
+            margin-top: 3%;
             padding: 4%;
         }
     }

@@ -19,7 +19,6 @@ header, footer {
   background-color: white;
 }
 #container header #titulo {
-  font-family: "Bowlby One SC";
   padding: 2%;
 }
 #container header #titulo h1 {
@@ -104,9 +103,10 @@ header, footer {
   margin-left: 1.5%;
   margin-right: 1.5%;
 }
-#container main .limpiar {
-  clear: both;
-}
 #container footer {
   padding: 1%;
+}
+
+.limpiar {
+  clear: both;
 }

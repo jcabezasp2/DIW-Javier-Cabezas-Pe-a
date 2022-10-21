@@ -1,12 +1,8 @@
 @use "sass:color";
 @use "sass:list";
+@import "colores.scss";
 
-$color_fondo: rgb(190, 187, 180);
-$color_titulo: rgb(212, 211, 208);
-$color_cabecera: rgb(52, 48, 44);
-$color_letras_cabecera: rgb(212, 216, 214);
-$color_letras_titulos: rgb(84, 82, 78);
-$color_menu: rgb(255, 220, 12);
+
 *{
     box-sizing: border-box;
     font-family: Verdana;
@@ -50,9 +46,7 @@ header, footer{
                 li{
                     display: inline-block;
                     padding: 1%;
-                    a{
-                        
-                    }
+
 
                     &:hover{
                         background-color: $color_menu;
