@@ -30,12 +30,12 @@ header{
 main{
     padding:1em;
     height:80%; /* 80% del padre (#contenedor) */
-    
+    display: flex;
      
     .interna{
         font-weight: bold;      
         padding:1em;
-    
+        flex-grow: 1;
     }
     .verde{
        
@@ -48,6 +48,10 @@ main{
         background-color:rgba(0,0,255,0.2);
         color:rgba(0,0,255,0.7);
         border:1px solid rgba(0,0,255,0.7);
+    }
+
+    #div2{
+        flex-grow: 4 !important;
     }
 
  }

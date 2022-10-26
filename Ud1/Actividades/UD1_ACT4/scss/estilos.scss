@@ -1,0 +1,16 @@
+@use "sass:color";
+@use "sass:list";
+@import "variables.scss";
+@import "banner.scss";
+@import "cita.scss";
+@import "contacto.scss";
+@import "descripcion.scss";
+@import "ayuda.scss";
+@import "cabecera.scss";
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
