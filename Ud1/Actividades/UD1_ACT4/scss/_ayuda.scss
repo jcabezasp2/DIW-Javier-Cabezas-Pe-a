@@ -1,0 +1,27 @@
+
+#ayuda{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    gap: 3em;
+    .datos{
+        text-align: center;
+        h1{
+            font-size: 2em;
+        }
+        p{
+            font-size: 3em;
+        }
+    }
+    .boton{
+        border: $amarillos 1px solid;
+        padding: 2%;
+        height: min-content;
+        &:hover{
+            color:white;
+            background-color: $amarillos;
+            cursor: pointer;
+        }
+    }
+
+}

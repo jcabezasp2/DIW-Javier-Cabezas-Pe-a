@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 4</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Kanit">
+    <script src="https://kit.fontawesome.com/c43811ca98.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
     <div id="container">
 
@@ -17,15 +21,15 @@
                 </div>
                 <div class="nombre-empresa">
                     <h1>CAMIONES</h1>
-                    <h1>PACO</h1>
+                    <h1 class="rojo">PACO</h1>
                 </div>
             </div>
 
             <nav class="menu">
-               <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Contacto</a></li>
-               </ul>
+                <ul>
+                    <li><a href="#" class="amarillo">Inicio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
             </nav>
         </header>
 
@@ -37,28 +41,70 @@
                     </div>
                     <div class="nombre-empresa">
                         <h1>CAMIONES</h1>
-                        <h1>PACO</h1>
+                        <h1 class="rojo">PACO</h1>
                     </div>
                 </div>
 
                 <div class="servicios">
                     <h1>SERVICIOS</h1>
                     <article class="servicio">
-                        //i
-                        <h2>Transporte de materiales</h2>
-                        <p>Transporte de aridos y materiales de construccion a pie de obra o a la localizacion deseada.</p>
+                        <i class="fa-solid fa-box amarillo"></i>
+                        <div class="trabajos">
+                            <h2>Transporte de materiales</h2>
+                            <p>Transporte de aridos y materiales de construccion a pie de obra o a la localizacion deseada.</p>
+                        </div>
                     </article>
                     <article class="servicio">
-                        //i
-                        <h2>Trabajos verticales</h2>
-                        <p></p>
+                        <i class="fa-sharp fa-solid fa-building amarillo"></i>
+                        <div class="trabajos">
+                            <h2>Trabajos verticales</h2>
+                            <p>Todo tipo de trabajos con pluma y cesta para accesos en altura, ademas de elevacion de
+                                profesionales para reparaciones.</p>
+                        </div>
                     </article>
                 </div>
             </div>
 
+            <div id="ayuda">
+                <div class="datos">
+                    <h1>¿Podemos ayudarte?</h1>
+                    <p class="amarillo">666-666 666 - 333 333 333</p>
+                </div>
+                <div class="boton amarillo">CONTACTO</div>
+            </div>
+
+            <div id="descripcion">
+                <div class="servicios">
+                    <article class="descripcion-servicio">                  
+                        <h2>PROFESIONALIDAD Y EXPERIENCIA</h2>
+                        <i class="fa-solid fa-thumbs-up amarillo"></i>
+                        <p>Nos avalan mas de 50 años en el sector, ofreciendo el mejor asesoramiento, calidad en el transporte y trato con el cliente.</p>
+                    </article>
+                    <article class="descripcion-servicio">                 
+                        <h2>PUNTUALIDAD Y SEGURIDAD</h2>
+                        <i class="fa-solid fa-clock amarillo"></i>
+                        <p>Nos avalan mas de 50 años en el sector, ofreciendo el mejor asesoramiento, calidad en el transporte y trato con el cliente.</p>
+                    </article>
+                    <article class="descripcion-servicio">
+                        <h2>TU TRANSPORTE DE CONFIANZA</h2>
+                        <i class="fa-solid fa-car amarillo"></i>
+                        <p>Nos avalan mas de 50 años en el sector, ofreciendo el mejor asesoramiento, calidad en el transporte y trato con el cliente.</p>
+                    </article>
+                </div>
+                <div class="contrastes">
+                    <div class="camion">
+                        <img src="img/camion.grua-palfinger.jpg" alt="Camion">
+                    </div>
+                    <div class="contrastes">
+                        <div class="experiencia">+ 50 AÑOS DE EXPERIENCIA</div>
+                        <div class="clientes">+ 400 CLIENTES DE CONFIANZA</div>
+                    </div>
+                </div>
+            </div>
 
         </main>
 
     </div>
 </body>
+
 </html>
