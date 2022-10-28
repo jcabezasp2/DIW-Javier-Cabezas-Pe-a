@@ -42,12 +42,26 @@
             .experiencia{
                 flex-grow: 1;
                 background-color: $letras_rojas;
-                padding: 5%;
+                padding: 3%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                div:first-child{
+                    font-weight: bold;
+                    font-size: 1.5em;
+                }
             }
             .clientes{
                 flex-grow: 1;
                 background-color: $amarillos;
-                padding: 5%;
+                padding: 3%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                div:first-child{
+                    font-weight: bold;
+                    font-size: 1.5em;
+                }
             }
         }
     }

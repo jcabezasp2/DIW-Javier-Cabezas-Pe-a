@@ -54,6 +54,82 @@
   font-size: 2em;
 }
 
+#cita {
+  padding: 5%;
+  text-align: center;
+}
+#cita div:first-child {
+  font-size: 3em;
+  padding-bottom: 2%;
+}
+#cita div:last-child {
+  font-size: 2em;
+  color: grey;
+}
+
+#contacto {
+  display: flex;
+}
+#contacto .formulario-contacto {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: rgb(244, 174, 8);
+  padding: 1%;
+}
+#contacto .formulario-contacto h2 {
+  text-align: center;
+  font-size: 2em;
+  padding: 4% 0%;
+}
+#contacto .formulario-contacto input, #contacto .formulario-contacto textarea {
+  padding: 1%;
+  color: grey;
+  font-family: kanit;
+}
+#contacto .formulario-contacto input:focus, #contacto .formulario-contacto textarea:focus {
+  background-color: rgb(230, 230, 230);
+  outline: unset;
+}
+#contacto .formulario-contacto button {
+  align-self: flex-end;
+  border: 1px solid black;
+  padding: 2%;
+}
+#contacto .formulario-contacto button:hover {
+  color: rgb(244, 174, 8);
+  background-color: rgb(14, 14, 14);
+}
+#contacto .datos-contacto {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+#contacto .datos-contacto .fb {
+  background-color: rgb(14, 14, 14);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4% 0%;
+}
+#contacto .datos-contacto .datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+  padding: 7%;
+}
+#contacto .datos-contacto .datos .dato-contacto {
+  flex-basis: 10%;
+  display: flex;
+  gap: 1em;
+}
+#contacto .datos-contacto .datos .dato-contacto i {
+  font-size: small;
+}
+
 #descripcion {
   display: flex;
 }
@@ -94,12 +170,26 @@
 #descripcion .contrastes .contrastes .experiencia {
   flex-grow: 1;
   background-color: rgb(209, 0, 21);
-  padding: 5%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#descripcion .contrastes .contrastes .experiencia div:first-child {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 #descripcion .contrastes .contrastes .clientes {
   flex-grow: 1;
   background-color: rgb(244, 174, 8);
-  padding: 5%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#descripcion .contrastes .contrastes .clientes div:first-child {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 #ayuda {
@@ -173,6 +263,7 @@
   margin: 0;
   padding: 0;
   font-family: Kanit;
+  scroll-behavior: smooth;
 }
 
 .amarillo {

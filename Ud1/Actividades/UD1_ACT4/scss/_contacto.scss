@@ -1,0 +1,66 @@
+#contacto{
+    display: flex;
+    .formulario-contacto{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        background-color: $amarillos;
+        padding: 1%;
+        h2{
+            text-align: center;
+            font-size: 2em;
+            padding: 4% 0%;
+        }
+
+        input, textarea{
+            padding: 1%;
+            color: grey;
+            font-family: kanit;
+            &:focus{
+                background-color: $gris-claro;
+                outline: unset;
+            }
+        }
+
+        button{
+            align-self: flex-end;
+            border: 1px solid black;
+            padding: 2%;
+            &:hover{
+                color: $amarillos;
+                background-color: $fondo_oscuro;
+            }
+        }
+    }
+
+    .datos-contacto{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        .fb{
+            background-color: $fondo_oscuro;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4% 0%;
+        }
+
+        .datos{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-grow: 1;
+            padding: 7%;
+            .dato-contacto{
+                flex-basis: 10%;
+                display: flex;
+                gap: 1em;
+                i{
+                    font-size: small;
+                }
+            }
+        }
+    }
+}
