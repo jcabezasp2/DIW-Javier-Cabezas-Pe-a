@@ -15,11 +15,11 @@
 <body>
     <div id="container">
 
-        <header id="cabecera">
+        <header id="cabecera" class="fondo_oscuro">
             <div class="identidad-corporativa-small">
                 <div class="logo">
                 </div>
-                <div class="nombre-empresa">
+                <div class="nombre-empresa flex_column">
                     <h1>CAMIONES</h1>
                     <h1 class="rojo">PACO</h1>
                 </div>
@@ -35,28 +35,28 @@
 
         <main>
             <div id="banner">
-                <div class="identidad-corporativa-big">
+                <div class="identidad-corporativa-big flex_column">
                     <div class="logo">
                         <img src="img/logo.png" alt="Logo grande">
                     </div>
-                    <div class="nombre-empresa">
+                    <div class="nombre-empresa flex_column">
                         <h1>CAMIONES</h1>
                         <h1 class="rojo">PACO</h1>
                     </div>
                 </div>
 
-                <div class="servicios">
+                <div class="servicios flex_column">
                     <h1>SERVICIOS</h1>
                     <article class="servicio">
                         <i class="fa-solid fa-box amarillo"></i>
-                        <div class="trabajos">
+                        <div class="trabajos flex_column">
                             <h2>Transporte de materiales</h2>
                             <p>Transporte de aridos y materiales de construccion a pie de obra o a la localizacion deseada.</p>
                         </div>
                     </article>
                     <article class="servicio">
                         <i class="fa-sharp fa-solid fa-building amarillo"></i>
-                        <div class="trabajos">
+                        <div class="trabajos flex_column">
                             <h2>Trabajos verticales</h2>
                             <p>Todo tipo de trabajos con pluma y cesta para accesos en altura, ademas de elevacion de
                                 profesionales para reparaciones.</p>
@@ -70,11 +70,11 @@
                     <h1>¿Podemos ayudarte?</h1>
                     <p class="amarillo">666-666 666 - 333 333 333</p>
                 </div>
-                <div class="boton amarillo">CONTACTO</div>
+                <div class="boton amarillo"><a href="#contacto">CONTACTO</a></div>
             </div>
 
             <div id="descripcion">
-                <div class="servicios">
+                <div class="servicios flex_column fondo_oscuro">
                     <article class="descripcion-servicio">                  
                         <h2>PROFESIONALIDAD Y EXPERIENCIA</h2>
                         <i class="fa-solid fa-thumbs-up amarillo"></i>
@@ -91,13 +91,13 @@
                         <p>Nos avalan mas de 50 años en el sector, ofreciendo el mejor asesoramiento, calidad en el transporte y trato con el cliente.</p>
                     </article>
                 </div>
-                <div class="contrastes">
+                <div class="contrastes flex_column">
                     <div class="camion">
                         <img src="img/camion.grua-palfinger.jpg" alt="Camion">
                     </div>
                     <div class="contrastes">
-                        <div class="experiencia"><div>+ 50</div><div>AÑOS DE EXPERIENCIA</div></div>
-                        <div class="clientes"><div>+ 400</div><div>CLIENTES DE CONFIANZA</div></div>
+                        <div class="experiencia flex_column"><div>+ 50</div><div>AÑOS DE EXPERIENCIA</div></div>
+                        <div class="clientes flex_column"><div>+ 400</div><div>CLIENTES DE CONFIANZA</div></div>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
             </div>
 
             <div id="contacto">
-                <form action="" class="formulario-contacto">
+                <form action="" class="formulario-contacto flex_column">
                     <h2>Contactanos</h2>
                     <input type="text" name="" id="" placeholder="Nombre">
                     <input type="email" name="" id="" placeholder="Email">
@@ -115,22 +115,22 @@
                     <button type="submit">ENVIAR</button>
 
                 </form>
-                <div class="datos-contacto">
-                    <article class="fb">
+                <div class="datos-contacto flex_column">
+                    <article class="fb fondo_oscuro">
                         <i class="fa-brands fa-facebook-f"></i>
                     </article>
-                    <div class="datos">
+                    <div class="datos flex_column">
                         <article class="dato-contacto">
                             <i class="fa-solid fa-map"></i>
                             <p>C/ Pedro Caravia S/N 33012 Oviedo</p>
                         </article>
                         <article class="dato-contacto">
                             <i class="fa-solid fa-phone-flip"></i>
-                            <p>666-666 - 333 333 333</p>
+                            <p><a href="tel:666666333333333">666-666 - 333 333 333</a></p>
                         </article>
                         <article class="dato-contacto">
                             <i class="fa-solid fa-envelope"></i>
-                            <p>info@camionespaco.com</p>
+                            <p><a href="mailto:info@camionespaco.com">info@camionespaco.com</a></p>
                         </article>
                     </div>
                 </div>

@@ -17,7 +17,6 @@
     scroll-behavior: smooth;
 }
 
-
 .amarillo{
     color: $amarillos;
 }
@@ -27,10 +26,11 @@
 }
 
 
-// TODO añadir una clase blanco
+.fondo_oscuro{
+    background-color: $fondo_oscuro;
+}
 
-// TODO añadir una clase fondo oscuro
-
-// TODO añadir una clase flex direction column
-
-// TODO añadir una clase para el padding
+.flex_column{
+    display:flex;
+    flex-direction: column;
+}
