@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contenedor {
+  width: 80%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em;
+}
+#contenedor div {
+  padding: 2em;
+  text-align: center;
+}
+
+#cabecera {
+  background-color: khaki;
+  grid-column: span 5;
+}
+
+#menu {
+  background-color: lightblue;
+  grid-row: span 2;
+}
+
+#contenido1, #contenido2, #contenido3 {
+  background-color: lightcoral;
+}
+
+#contenido1, #contenido2 {
+  grid-column: span 4;
+}
+
+#contenido3 {
+  grid-column: span 5;
+}
+
+#pie {
+  background-color: lightgreen;
+  grid-column: span 5;
+}

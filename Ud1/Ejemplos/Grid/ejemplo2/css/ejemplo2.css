@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contenedor {
+  width: 80%;
+  margin: 20px auto;
+  display: grid;
+  grid-column: repeat(4, 1fr);
+  gap: 1em;
+}
+#contenedor div {
+  padding: 2em;
+  text-align: center;
+}
+
+#cabecera {
+  background-color: papayawhip;
+  grid-column: span 4;
+}
+
+#rojo {
+  background-color: #f5b19e;
+  grid-column: span 3;
+}
+
+#azul {
+  background-color: lightskyblue;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+#morado {
+  background-color: pink;
+  grid-column: span 1;
+}
+
+#marron {
+  background-color: sienna;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#verde {
+  background-color: olivedrab;
+  grid-column: span 1;
+}
+
+#negro {
+  background-color: black;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+#amarillo {
+  background-color: gold;
+  grid-column: span 2;
+}
+
+#naranja {
+  background-color: orange;
+  grid-column: span 1;
+}
