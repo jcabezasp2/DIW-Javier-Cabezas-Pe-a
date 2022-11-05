@@ -1,6 +1,7 @@
 *{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align:center;
+    box-sizing: border-box;
 }
 
 
@@ -10,7 +11,6 @@ header, nav, article, aside, footer {
 
 #contenedor{
     display: grid;
-    grid-column: repeat(5, 1fr);
     gap: 1em;
 }
 
@@ -19,40 +19,52 @@ header {
 }
 nav {
     background-color: #6ab5ff;
+    //display: flex;
+    //flex-direction: column;
     ul{
         list-style-type: none;
         padding-left:0;
+        display: flex;
+        //justify-content: space-around;
+        gap: 1em;
         li{         
             background-color:#929ed3af;
-           
+            flex-grow: 1;
+            padding: 1%;
         }
     }
 }
 main {
-  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 .articulo1 {
 
-   grid-column: span 1;
+    grid-column: span 2;
     background-color: rgba(255, 217, 0, 0.568);
-    
-   
+    display: flex;
+    flex-direction: column;
 }
 .articulo2 {
-  
-
+    grid-column: span 8;
+    display: flex;
+    flex-direction: column;
+    //padding: 0;
     .imagenes{
-    
+      width: 100%;
+      display: flex;
+      gap: 1em;
+      flex-wrap: wrap;
     img{
       width:100%;
       height:100%;
     }
 
     .corto{
-       
+        flex-basis: 34%;
     }
     .largo{
-       
+        flex-basis: 64%;
     }
 
     }
@@ -60,20 +72,25 @@ main {
 
 
 .contenido{
-
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 1em;
   
     div{
-     
+        padding: 1em;
         background-color:#dddd00;
-        
+        flex-grow: 1;
     }
 
 }
 
 aside {
     background-color: #e0e0e0;
-   
-   
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
