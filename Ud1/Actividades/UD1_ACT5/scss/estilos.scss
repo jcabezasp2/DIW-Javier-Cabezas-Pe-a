@@ -1,0 +1,13 @@
+@use "sass:color";
+@use "sass:list";
+@import "variables.scss";
+@import "aside.scss";
+@import "contacto.scss";
+@import "header.scss";
+@import "principal.scss";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
