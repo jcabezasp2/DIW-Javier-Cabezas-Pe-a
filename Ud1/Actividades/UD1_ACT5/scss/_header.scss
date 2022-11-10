@@ -1,0 +1,53 @@
+header{
+    grid-column: 2/12;
+    background-color: $azul_oscuro;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    padding: $espaciado;
+    color: $azul_logos;
+    h1{
+        grid-column: 1/4;
+        font-size: 1.5em;
+        align-self: center;
+        font-weight: 100;
+        span{
+            color: $rosa;
+        }
+    }
+
+    h2{
+        grid-column: 4/6;
+        align-self: center;
+        
+    }
+
+    nav{
+        grid-column: 11/16;
+        align-self: center;
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr 1fr;
+            gap: $espaciado;
+
+            li:first-child{
+                color: white;
+            }            
+            li{
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    #social{
+        grid-column: 20/-1;
+        align-self: center;
+        /* justify-items: end; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        i{
+            font-size: 2em;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+main{
+        grid-column: 2/12;
+        display: grid;
+        grid-template-columns:repeat(12, 1fr);
+        gap: $espaciado;
+    #principal{
+        grid-column: span 12;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: $espaciado;
+
+        #novedades{
+            grid-column: span 8;
+        }
+
+    }
+
+}
+
+.rosa{
+    background-color: $rosa;
+}
+
+.azulado{
+    background-color: $verdoso;
+}
+
+.naranja{
+    background-color: $anaranjado;
+}
+
+.naranja{
+    background-color: $anaranjado;
+}
+
+.azulin{
+    background-color: $azul_claro;
+}
+
