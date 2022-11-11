@@ -1,4 +1,14 @@
 footer{
     background-color: $azul_oscuro;
     grid-column: 2/12;
+    padding: $padding;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    span:first-child{
+
+    }
+
+    span:last-child{
+        grid-column: 3/-1;
+    }
 }

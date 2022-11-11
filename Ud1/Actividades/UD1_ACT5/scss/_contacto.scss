@@ -1,14 +1,23 @@
 #contacto{
-    
+    grid-column: 3 / 11;
     background-color: $azul_oscuro;
     display: grid;
     grid-template-columns: 1fr;
-    .etiqueta{
-       
+    padding: $padding;
+    gap: $espaciado;
+    h3{
+            font-size: 2em;
+            text-align: center;
     }
 
-    .campo{
-       
+    .campoformulario{
+        display: grid;
+        grid-template-columns: 20% 1fr;
+
+        input, textarea{
+            font-family: $tipografia;
+            padding: 1%;
+        }
     }
 
 }

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EjercicioX</title>
+    <title>Fashion Blog</title>
+    <link rel="icon" type="image/x-icon" href="./img/ico/favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://kit.fontawesome.com/c43811ca98.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
@@ -77,15 +78,22 @@
                 <aside>
                     <article>
                         <img src="./img/news1.jpg" alt="">
-                        <h4>Como ahorrar en peluqueria</h4>
-                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quaerat dolore neque, sapiente minima veritatis blanditiis magni assumenda ratione quidem sed omnis ab quas debitis consequatur vel ad inventore atque. Natus veritatis quidem, rem tempora dignissimos sapiente earum recusandae ea? Dicta iste obcaecati earum accusamus aspernatur dolorum quae illo natus.</div>
+                        <div class="espaciado">   
+                            <h4>Como ahorrar <wbr>en peluqueria</h4>
+                            <div>Lorem ipsum dolor Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, voluptatum.  blanditiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, vero! magni assumenda ratione quidem sed omnis ab quas debitis consequatur vel ad inventore atque. Natus veritatis quidem, rem tempora dignissimos sapiente earum recusandae ea? Dicta iste obcaecati earum accusamus aspernatur dolorum quae illo natus.</div>
+                        </div>
                     </article>
                     <article>
                         <img src="./img/news2.jpg" alt="">
-                        <h4>Como ahorrar en maquillaje</h4>
-                        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore fugiat magni illum architecto ipsam reiciendis hic atque maiores modi, facilis minus. Veritatis dolorem nisi quos vel laudantium quasi saepe id commodi similique, facilis quibusdam voluptatibus. Molestiae dicta, debitis molestias commodi eaque voluptates perferendis modi. Neque tenetur ea nobis quae earum!</div>
+                        <div class="espaciado">
+                            <h4>Como ahorrar <wbr>en maquillaje</h4>
+                            <div>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ab. reiciendis Lorem  dolor sit amet. dolor sit amet consectetur adipisicing elit. Provident, vero! hic atque maiores modi, facilis minus. Veritatis dolorem nisi quos vel laudantium quasi saepe id commodi similique, facilis quibusdam voluptatibus. Molestiae dicta, debitis molestias commodi eaque voluptates perferendis modi. Neque tenetur ea nobis quae earum!</div>
+                        </div>
                     </article>
-                    <img src="./img/banner.jpg" alt="">
+                    <div id="banner">
+                    <!--     <img src="./img/banner.jpg" alt=""> -->
+                    </div>
+                    
                 </aside>
 
 
@@ -93,12 +101,18 @@
             </section>
             <section id="contacto">
                 <h3>¿Tienes dudas? Contáctanos</h3>
-                <label class="etiqueta" for="nombre">Nombre</label>
-                <input class="campo" type="text" id="nombre">
-                <label class="etiqueta" for="mail">Email</label>
-                <input class="campo" type="email" id="mail">
-                <label class="etiqueta" for="comentario1">Comentario</label>
-                <textarea class="campo" title="comentario" name="" id="" cols="30" rows="10" id="comentario1" name="comentario1" placeholder=" "></textarea>
+                <div class="campoformulario">
+                    <label class="etiqueta" for="nombre">Nombre</label>
+                    <input class="campo" type="text" id="nombre">
+                </div>
+                <div class="campoformulario">
+                    <label class="etiqueta" for="mail">Email</label>
+                    <input class="campo" type="email" id="mail">
+                </div>
+                <div class="campoformulario">
+                    <label class="etiqueta" for="comentario1">Comentarios</label>
+                    <textarea class="campo" title="comentario" name="" id="" cols="30" rows="10" id="comentario1" name="comentario1" placeholder=" "></textarea>
+                </div>      
             </section>
 
         </main>
