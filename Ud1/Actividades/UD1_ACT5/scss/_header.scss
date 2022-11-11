@@ -2,36 +2,41 @@ header{
     grid-column: 2/12;  
     background-color: $azul_oscuro;
     display: grid;
-    grid-template-columns: repeat(20, 1fr); // TODO auto
+    grid-template-columns: auto auto auto;
     padding: $padding;
     color: white;
-
-    h1{
-        grid-column: 1/4;
-        font-size: 1.5em;
-        align-self: center;
-
+    #identidad{
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        gap: 0.5em;
+        h1{
+            font-size: 1.5em;
+            align-self: center;
+        }
         span{
             color: $rosa;
+            align-self: center;
+            font-size: 1.5em;
+        }
+    
+        h2{
+            align-self: center;
+            justify-self: start;
+            color: $azul_logos;
+            padding-left: 2em;
         }
     }
 
-    h2{
-        grid-column: 4/6;
-        align-self: center;
-
-        color: $azul_logos;
-    }
 
     nav{
-        grid-column: 11/16;
+        justify-self: center;
         align-self: center;
         ul{
             display: grid;
-            grid-template-columns: 1fr 2fr 1fr 1fr;
-            gap: $espaciado;
+            grid-template-columns: auto auto auto auto;
+            gap: 1em;
 
-            li:first-child{
+            li:first-child a{
                 color: white;
                 font-weight: 400;
             }            
@@ -44,11 +49,11 @@ header{
     }
 
     #social{
-        grid-column: 20/-1;
+        justify-self: end;
         align-self: center;
-        /* justify-items: end; */
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 0.5em;
         i{
             font-size: 2em;
             color: $azul_logos;
