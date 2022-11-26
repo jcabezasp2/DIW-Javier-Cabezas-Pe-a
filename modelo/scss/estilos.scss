@@ -1,6 +1,7 @@
 @use "sass:color";
 @use "sass:list";
-@import "colores.scss";
+@import "variables.scss";
+@import "rejilla.scss";
 
 *{
     box-sizing: border-box;
