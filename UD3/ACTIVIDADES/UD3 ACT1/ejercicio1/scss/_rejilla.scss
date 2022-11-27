@@ -28,7 +28,7 @@ $breakpoints:(
 
 .contenedor{
     display: grid;
-    padding:$espacio-filas;
+   // padding:$espacio-filas;
     grid-template-columns: repeat($columnas,1fr);
     row-gap:$espacio-filas;
     column-gap:$espacio-columnas;
@@ -37,7 +37,7 @@ $breakpoints:(
 /* El estilo por defecto se aplica a resoluciones pequeñas  */ 
     [class*="col-"] {
       
-        padding:1em;
+        padding:0.5em;
         grid-column-end:span 12;
     }
 
