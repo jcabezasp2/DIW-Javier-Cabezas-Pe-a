@@ -11,25 +11,38 @@
 
 
 @include breakpoint(nth(map-get($breakpoints,"sm"),1),nth(map-get($breakpoints,"sm"),2)){
-    /* Ejemplo de uso media query para resoluciones MD */
+    /* Ejemplo de uso media query para resoluciones sm */
 
+    nav, aside{
+      order: -1;
+    }
+
+    header{
+      order: -1;
+    }
+
+    aside {
+      p{
+        padding: 0.5em;
+      }
+    }
 
   } 
 
  @include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"md"),2)){
-   /* Ejemplo de uso media query para resoluciones LG */
+   /* Ejemplo de uso media query para resoluciones md */
 
    .animal{
     img{
         width: 40%;
     }
 
-    &:nth-child(odd){
+    &:nth-child(even){
         padding-left: 0;
         padding-right: 1em;
     }
 
-    &:nth-child(even){
+    &:nth-child(odd){
         padding-left: 1em;
         padding-right: 0;
     }
@@ -37,26 +50,33 @@
 
 }
 
+
     nav, aside{
       order: -1;
     }
 
-
+    header{
+      order: -1;
+    }
 
  } 
 
  @include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"lg"),2)){
     /* Ejemplo de uso media query para resoluciones XL */
 
-
   }   
 
 
   // Estilos generales
 
+  body > .contenedor{
+    padding: 0;
+  }
+
   header{
-    @extend %display_grid;
+
     background-color: $fondo_header;
+    padding: 0.5em;
     h1{
         font-size: 3em;
         font-weight: 200;
@@ -67,10 +87,9 @@
   }
 
   nav {
-    ul{
-      display: flex;
-      flex-direction: column;
-      gap: 0.2em;
+    .contenedor{
+      row-gap: 0.2em;
+      padding: 0;
       li{
         background-color: $fondo_nav;
         color: white;
@@ -103,9 +122,10 @@
   }
 
 .animal{
-  @extend %display_grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding:0;
-  text-align: center;
   h1{
       font-size: 1.2em;
       font-weight: 200;
