@@ -1,0 +1,29 @@
+* {
+  color: blue;
+}
+
+nav #lista1 {
+  color: pink;
+}
+nav #lista2 {
+  color: #ffffcb;
+}
+nav #lista3 {
+  color: pink;
+}
+nav #lista4 {
+  color: #ffc0ff;
+}
+nav #lista5 {
+  color: pink;
+}
+
+main {
+  padding: 1em;
+}
+main div {
+  border: 1px solid blue;
+}
+main div p {
+  color: pink;
+}/*# sourceMappingURL=estilos.css.map */

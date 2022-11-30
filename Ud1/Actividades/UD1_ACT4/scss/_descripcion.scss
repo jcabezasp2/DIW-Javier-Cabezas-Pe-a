@@ -1,0 +1,61 @@
+
+#descripcion{
+    display: flex;
+    .servicios{
+        flex-basis: 50%;
+        justify-content: space-between;
+        padding: 2% 2% 3% 2%;
+        .descripcion-servicio{
+            color: white;
+            text-align: center;
+            padding: 1% 0%;
+            h2{
+                font-size: 2em;
+            }
+            i{
+                font-size: 2em;
+                padding: 2% 0%;
+            }
+            p{
+                font-size: 1em;
+            }
+        }
+    }
+
+    .contrastes{
+        flex-basis: 50%;
+        .camion{
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .contrastes{
+            display: flex;
+            flex-direction: row;
+
+            .experiencia{
+                flex-grow: 1;
+                background-color: $letras_rojas;
+                padding: 3%;
+                text-align: center;
+                div:first-child{
+                    font-weight: bold;
+                    font-size: 1.5em;
+                }
+            }
+            .clientes{
+                flex-grow: 1;
+                background-color: $amarillos;
+                padding: 3%;
+                text-align: center;
+                div:first-child{
+                    font-weight: bold;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+width: 80%;
+margin: auto;
+}
+
+#contenedor {
+    display: flex;
+    justify-content: space-between;
+    border: 2px black solid;
+    background-color: rgb(109, 109, 109);
+}
+
+.caja{
+    border: 2px solid black;
+    background-color: rgb(198, 176, 177);
+    color: white;
+    padding: 1%;
+    margin: 1%;
+    font-size: 2vw;
+}

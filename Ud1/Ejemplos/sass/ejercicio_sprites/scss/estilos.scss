@@ -1,0 +1,50 @@
+@use "sass:color";
+@use "sass:list";
+
+$logos: ("twitter", "you_tube", "facebook", "flickr" );
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+width: 80%;
+margin: auto;
+}
+
+#contenedor {
+    display: flex;
+    border: 3px black solid;   
+    height: auto;
+    width: min-content;
+    margin: auto;
+    align-items: center;
+    background-color: rgb(177, 179, 198);
+    padding: 2% 1%;
+} 
+
+#logos{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    height: 70%;
+
+}
+
+.logo{
+    width: 105px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url("img/sprite.png");
+
+}
+
+@each $logo in $logos{
+    ##{$logo}{
+        background-position: #{(list.index($logos, $logo) - 1) * -105}px 0px;
+         &:hover{
+            background-position: #{(list.index($logos, $logo) - 1) * -105}px -110px;
+         }
+     }
+ 
+ }

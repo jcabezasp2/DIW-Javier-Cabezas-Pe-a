@@ -1,0 +1,56 @@
+body {
+  width: 80%;
+  margin: auto;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+#contenedor {
+  display: flex;
+  border: 3px black solid;
+  height: 25vh;
+  align-items: center;
+  background-color: rgb(177, 179, 198);
+}
+
+#logos {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  height: 70%;
+}
+
+.logo {
+  width: 15%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#facebook {
+  background-image: url("img/facebook_color.png");
+}
+#facebook:hover {
+  background-image: url("img/facebook.png");
+}
+
+#twitter {
+  background-image: url("img/twitter_color.png");
+}
+#twitter:hover {
+  background-image: url("img/twitter.png");
+}
+
+#flickr {
+  background-image: url("img/flickr_color.png");
+}
+#flickr:hover {
+  background-image: url("img/flickr.png");
+}
+
+#you_tube {
+  background-image: url("img/you_tube_color.png");
+}
+#you_tube:hover {
+  background-image: url("img/you_tube.png");
+}

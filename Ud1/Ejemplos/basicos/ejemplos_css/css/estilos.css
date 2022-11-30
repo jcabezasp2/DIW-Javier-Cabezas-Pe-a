@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+#contenedor {
+    display: flex;
+}
+
+.primero{
+    color: #ff2222;
+}
+
+.segundo{
+    color: blue;
+}
+
+.tercero{
+    color: green;
+}
+
+.mitad {
+    color:blueviolet;
+    border: 1px solid blueviolet;
+    padding: 1em;
+    margin: 2em;
+    width: 400px;
+}
+
+#contenedor{
+    width: 800px;
+}
+
+#pachanga{
+    width: 75%;
+}
+
+.baloncesto{
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("img/halo.webp");
+}

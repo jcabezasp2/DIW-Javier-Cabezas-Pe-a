@@ -1,0 +1,27 @@
+@use "sass:color";
+
+$colorBase: blue;
+$alto:100px;
+$largo: 100px;
+#container{
+
+    div{
+        width: $largo;
+        height: $alto;
+    }
+    #caja1{
+        background-color:adjust-color($colorBase, $green: 100);
+    }
+
+    #caja2{
+        background-color:adjust-color($colorBase, $green: 150);
+    }
+
+    #caja3{
+        background-color:adjust-color($colorBase, $green: 200);
+    }
+
+    #caja4{
+        background-color:adjust-color($colorBase, $green: 250);
+    }
+}

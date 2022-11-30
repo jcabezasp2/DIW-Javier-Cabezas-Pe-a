@@ -1,0 +1,29 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: $fondo-claro;
+    a{
+        display: flex;
+        gap: 0.5em;
+        h1{
+            color: $azul-claro;
+            align-self: end;
+            font-size: 1.3em;
+        }
+
+        img{
+            width: 3em;
+        }
+    }
+nav{
+    display: flex;
+    ul{
+        display: flex;
+        gap: 3em;
+        color: $azul-claro;
+        align-self: end;
+    }
+}
+
+}

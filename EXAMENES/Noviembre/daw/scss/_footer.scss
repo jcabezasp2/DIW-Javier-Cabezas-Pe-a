@@ -1,0 +1,11 @@
+footer{
+display: flex;
+background-color: $negro;
+color: white;
+padding: 0.8% 0%;
+justify-content: space-around;
+ul{
+    display: flex;
+    gap: 1em;
+}
+}

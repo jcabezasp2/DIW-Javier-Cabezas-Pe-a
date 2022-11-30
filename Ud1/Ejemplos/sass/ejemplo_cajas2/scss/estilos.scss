@@ -1,0 +1,21 @@
+@use "sass:color";
+
+$colorBase: blue;
+$alto:100px;
+$largo: 100px;
+#container{
+
+    div{
+        width: $largo;
+        height: $alto;
+    }
+
+    @for $i from 1 through 4{
+        #caja#{$i}{
+            background-color:adjust-color($colorBase, $green: $i * 50);
+        }
+
+    }
+
+
+}

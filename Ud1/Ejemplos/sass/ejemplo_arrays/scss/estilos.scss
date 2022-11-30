@@ -1,0 +1,23 @@
+@use "sass:color";
+@use "sass:list";
+
+$colores: (blue, red, violet, yellow);
+$alto:100px;
+$largo: 100px;
+#container{
+
+    div{
+        width: $largo;
+        height: $alto;
+    }
+
+
+
+    @each $color in $colores{
+        #caja#{list.index($colores, $color)}{
+            background-color: $color;
+        }
+
+    }
+
+}

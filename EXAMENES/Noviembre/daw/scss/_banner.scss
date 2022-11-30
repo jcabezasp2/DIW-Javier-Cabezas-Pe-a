@@ -1,0 +1,25 @@
+#main-slider{
+
+    background-image: url('img/banner/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 2%;
+    color: white;
+    h2, a{
+        padding: 0.8%;
+        background-color: $azul-claro;
+    }
+
+    h2{
+        font-size: 2em;
+
+        span{
+            font-size: 0.8em;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+#container div {
+  width: 100px;
+  height: 100px;
+}
+#container #caja1 {
+  background-color: #0064ff;
+}
+#container #caja2 {
+  background-color: #0096ff;
+}
+#container #caja3 {
+  background-color: #00c8ff;
+}
+#container #caja4 {
+  background-color: #00faff;
+}

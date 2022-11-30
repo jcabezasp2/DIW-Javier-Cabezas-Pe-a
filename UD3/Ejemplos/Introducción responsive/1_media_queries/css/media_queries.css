@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8em;
+}
+
+#contenedor {
+  padding: 0 1em;
+  display: grid;
+  gap: 1em;
+}
+#contenedor p {
+  background-color: cadetblue;
+  padding: 1em;
+}
+
+@media screen and (min-width: 1200px) {
+  .big {
+    background-color: orange !important;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .medium {
+    background-color: blue !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .small {
+    background-color: green !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .x-small {
+    background-color: yellow !important;
+  }
+}

@@ -1,0 +1,40 @@
+@use "sass:color";
+
+$color: blue;
+$tam-base:1em;
+$bordes:(1px solid $color);
+$tipografia: "Arial";
+$colorParrafo: pink;
+*{
+    color: $color;
+
+}
+
+nav{
+    #lista1{
+       color: $colorParrafo;
+    }
+    #lista2{
+        color:adjust-color($colorParrafo, $green: 100);
+    }
+    #lista3{
+        color:adjust-color($colorParrafo, $red: 100);
+    }
+    #lista4{
+        color:adjust-color($colorParrafo, $blue: 100);
+    }
+    #lista5{
+        //color: adjust-color($color: #000000, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0);
+        color:adjust-color($colorParrafo, $alpha: 0.1);
+    }
+}
+
+main{
+    padding: $tam-base;
+    div{
+        border: $bordes;
+        p{
+            color: $colorParrafo;
+        }
+    }
+}

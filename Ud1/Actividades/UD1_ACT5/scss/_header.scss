@@ -1,0 +1,62 @@
+header{
+    grid-column: 2/12;  
+    background-color: $azul_oscuro;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: $padding;
+    color: white;
+    #identidad{
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        gap: 0.5em;
+        h1{
+            font-size: 1.5em;
+            align-self: center;
+        }
+        span{
+            color: $rosa;
+            align-self: center;
+            font-size: 1.5em;
+        }
+    
+        h2{
+            align-self: center;
+            justify-self: start;
+            color: $azul_logos;
+            padding-left: 2em;
+        }
+    }
+
+
+    nav{
+        justify-self: center;
+        align-self: center;
+        ul{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 1em;
+
+            li:first-child a{
+                color: white;
+                font-weight: 400;
+            }            
+            li{
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    #social{
+        justify-self: end;
+        align-self: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5em;
+        i{
+            font-size: 2em;
+            color: $azul_logos;
+        }
+    }
+}

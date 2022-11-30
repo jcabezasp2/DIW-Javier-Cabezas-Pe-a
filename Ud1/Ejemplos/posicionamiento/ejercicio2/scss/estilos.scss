@@ -1,0 +1,37 @@
+@use "sass:color";
+@use "sass:list";
+@import "colores.scss";
+
+
+
+#container{
+    padding: 1%;
+    #caja, p, a, span{
+        display: inline-block;
+        width: 10vW;
+        height: 25vh;
+    }
+    background-color: $salmon;
+    h1{
+    background-color: $rojo;
+    color: white;
+    margin-bottom: 1%;
+
+}
+
+
+    #caja, p{
+    background-color: $verdeClaro;
+    color: green;
+    border: 1px green solid;
+}
+
+    a, span{
+        background-color: $azulClaro;
+        color: $azul;
+        opacity: 0.5;
+        border: 1px $azul solid;
+    }
+
+ 
+}

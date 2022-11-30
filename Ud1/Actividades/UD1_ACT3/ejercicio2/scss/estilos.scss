@@ -1,0 +1,91 @@
+@use "sass:color";
+@use "sass:list";
+@import "colores.scss";
+
+
+*{
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+body{
+    background-color: $color_fondo;  
+}
+
+header, footer{
+    background-color: $color_cabecera;
+    color: $color_letras_cabecera;
+    text-align: center;
+    padding: 1%;
+}
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    
+
+    header{
+
+        h1{
+            font-size: 2.2em;
+            padding-bottom: 2%;
+            font-family: 'Bowlby One SC';
+        }
+
+        h3{
+            font-size: 1.3em;
+        }
+    }
+    main{
+        padding: 2% 3%;
+
+        .linea{
+            display: inline-block;
+        }
+
+        .ficha{      
+            width: 32%;
+            margin-bottom: 1.5%;
+            background-color: $color_fondo;
+            padding: 1%;
+            border-radius: 5px;
+            float: left;
+            
+            img{
+                display: block;
+                width: 91%;
+                margin: 0 auto;
+                border-radius: 5px;
+            }
+     
+            p{
+                width: 100%;
+                background-color: $color_titulo;
+                color: $color_letras_titulos;
+                margin: auto;
+                text-align: center;
+                border-radius: 2px;
+                margin-top: 3%;
+                padding: 3%;
+                font-size: 1.2em;
+            }
+            
+        }
+
+        #ultima{
+            article:first-child{
+                margin: 0 1.5% 0 17%;
+            }
+        }
+
+        .central{
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+        }
+    }
+} 
+
+.limpiar{
+    clear: both;
+}
