@@ -291,9 +291,6 @@ p {
 }
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
-  .animal {
-    background-color: red;
-  }
   .animal img {
     width: 40%;
   }
