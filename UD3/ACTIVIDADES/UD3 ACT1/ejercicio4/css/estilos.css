@@ -1,9 +1,9 @@
 .contenedor {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  row-gap: 1em;
-  -moz-column-gap: 1em;
-       column-gap: 1em;
+  row-gap: 0.9vw;
+  -moz-column-gap: 0.9vw;
+       column-gap: 0.9vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -230,10 +230,10 @@
 }
 header {
   background-color: #162b4d;
-  padding: 1em;
+  padding: 0.9vw;
 }
 header #titulo h1 {
-  font-size: 3em;
+  font-size: 2.7vw;
   letter-spacing: -1px;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -244,16 +244,16 @@ header #titulo h1 span {
 }
 header #titulo p {
   color: #637693;
-  font-size: 1.5em;
+  font-size: 1.35vw;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 header nav ul {
-  gap: 1em;
+  gap: 0.9vw;
 }
 header nav ul li {
-  font-size: 1.5em;
+  font-size: 1.35vw;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -263,25 +263,42 @@ header nav ul li#activo {
   font-weight: bold;
 }
 header nav #social i {
-  font-size: 2em;
+  font-size: 1.8vw;
   color: #637693;
 }
 
+@media screen and (min-width: 1024px) {
+  header p {
+    align-self: center;
+  }
+  nav {
+    align-content: center;
+  }
+  nav ul {
+    -moz-column-gap: 2.2vw !important;
+         column-gap: 2.2vw !important;
+  }
+  #social {
+    -moz-column-gap: 0.3vw;
+         column-gap: 0.3vw;
+  }
+}
 section#principal {
   row-gap: 0;
   -moz-column-gap: 0;
        column-gap: 0;
 }
 section#principal article {
-  padding: 1em;
-  row-gap: 0;
+  padding: 0.9vw;
+  grid-template-rows: auto auto 1fr;
 }
 section#principal article h2 {
-  font-size: 4.5em;
-  padding-bottom: 0.5em;
+  font-size: 4.05vw;
+  padding-bottom: 0.45vw;
 }
 section#principal article .fecha {
-  font-size: 2em;
+  font-size: 1.8vw;
+  justify-self: end;
 }
 section#principal img {
   width: 100%;
@@ -307,12 +324,12 @@ aside article {
   background-color: #FFF;
 }
 aside article h2 {
-  font-size: 1.5em;
+  font-size: 1.35vw;
   font-weight: 500;
 }
 aside article h2, aside article p {
   color: black;
-  padding: 1em;
+  padding: 0.9vw;
 }
 aside article img {
   width: 100%;
@@ -324,16 +341,16 @@ aside .banner img {
 
 section#contacto {
   background-color: #162b4d;
-  padding: 1em;
+  padding: 0.9vw;
 }
 section#contacto h1 {
-  font-size: 2em;
-  padding: 0.5em;
+  font-size: 1.8vw;
+  padding: 0.45vw;
   text-align: center;
 }
 section#contacto input, section#contacto textarea {
   color: black;
-  padding: 0.3333333333em;
+  padding: 0.3vw;
   font-family: Roboto;
   font-weight: 400;
 }
@@ -342,7 +359,7 @@ section#contacto textarea {
 }
 
 footer {
-  padding: 1em;
+  padding: 0.9vw;
   background-color: #162b4d;
 }
 footer #nombre {
@@ -356,8 +373,8 @@ footer #nombre {
 }
 
 p {
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 1.35vw;
+  line-height: 1.35vw;
 }
 
 body {
@@ -369,5 +386,5 @@ body {
 }
 
 #contenido {
-  row-gap: 3em;
+  row-gap: 2.7vw;
 }
