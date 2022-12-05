@@ -53,4 +53,23 @@ header{
     }
 }
 
+@include breakpoint(nth(map-get($breakpoints,"xl"),1),nth(map-get($breakpoints,"xl"),2)){
+    header{
+        p{
+            align-self: center;
+        }
+    }
+    
+    nav{
+        align-content: center;
+        ul{
+            column-gap: 2.2vw !important;
+        }
+    }
+
+    #social{
+        column-gap: 0.3vw;
+    }
+}
+
 
