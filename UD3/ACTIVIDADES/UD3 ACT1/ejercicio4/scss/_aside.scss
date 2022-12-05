@@ -26,3 +26,22 @@ aside{
     
    
 }
+
+@include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"md"),2)){
+
+    aside.contenedor{
+        row-gap: 2.25em;
+        article{
+            h2{
+                font-size: 3vw;
+                padding: 4% 2% 6% 2%;
+            }
+            p{
+                font-size: 3vw;
+                line-height: 125%;
+                padding: 0 2% 3% 2%;
+            }
+        }
+    }
+
+}

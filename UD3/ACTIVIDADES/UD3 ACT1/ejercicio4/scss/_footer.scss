@@ -5,3 +5,17 @@ footer{
         text-align: right;
     }
 }
+
+@include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"md"),2)){
+
+    footer.contenedor{
+        p:first-child, #nombre {
+           font-size: 3vw;
+           line-height: unset;
+           text-align: center;
+           padding: 1% 0;
+        }
+    }
+
+
+}

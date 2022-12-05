@@ -283,6 +283,21 @@ header nav #social i {
          column-gap: 0.3vw;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header #titulo a h1 {
+    font-size: 4vw;
+  }
+  header #titulo p {
+    font-size: 2.5vw;
+    align-self: center;
+  }
+  header nav {
+    align-content: center;
+  }
+  header nav ul li {
+    font-size: 2.5vw;
+  }
+}
 section#principal {
   row-gap: 0;
   -moz-column-gap: 0;
@@ -323,6 +338,23 @@ section#principal #barato {
   background-color: #2d95bb;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section#principal {
+    row-gap: 1em;
+  }
+  section#principal article {
+    padding: 1.5vw;
+  }
+  section#principal article .fecha {
+    font-size: 4vw;
+  }
+  section#principal article h2 {
+    font-size: 8vw;
+  }
+  section#principal article p {
+    font-size: 2vw;
+  }
+}
 aside article {
   background-color: #FFF;
 }
@@ -342,6 +374,20 @@ aside .banner img {
   height: 100%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  aside.contenedor {
+    row-gap: 2.25em;
+  }
+  aside.contenedor article h2 {
+    font-size: 3vw;
+    padding: 4% 2% 6% 2%;
+  }
+  aside.contenedor article p {
+    font-size: 3vw;
+    line-height: 125%;
+    padding: 0 2% 3% 2%;
+  }
+}
 section#contacto {
   background-color: #162b4d;
   padding: 0.9vw;
@@ -361,6 +407,12 @@ section#contacto textarea {
   resize: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section#contacto h1 {
+    font-size: 4vw;
+    padding: 3% 0;
+  }
+}
 footer {
   padding: 0.9vw;
   background-color: #162b4d;
@@ -369,6 +421,14 @@ footer #nombre {
   text-align: right;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  footer.contenedor p:first-child, footer.contenedor #nombre {
+    font-size: 3vw;
+    line-height: unset;
+    text-align: center;
+    padding: 1% 0;
+  }
+}
 * {
   font-family: Roboto;
   color: #FFF;

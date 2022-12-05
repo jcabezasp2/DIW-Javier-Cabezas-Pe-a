@@ -72,4 +72,32 @@ header{
     }
 }
 
+@include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"md"),2)){
+    header{
+        #titulo{
+            a{
+                h1{
+                    font-size: 4vw;
+                }
+
+            }
+            p{
+                font-size: 2.5vw;
+                align-self: center;
+            }
+        }
+        nav{
+            align-content: center;
+            ul{
+                li{
+                    font-size: 2.5vw;
+                }     
+            }
+        }
+    }
+    
+
+
+}
+
 

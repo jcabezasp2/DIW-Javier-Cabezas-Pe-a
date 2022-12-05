@@ -44,3 +44,25 @@
     }
 
  }
+
+ @include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"md"),2)){
+
+    section#principal{
+        row-gap: 1em;
+        article{
+            padding: 1.5vw;
+            .fecha{
+                font-size: 4vw;
+            }
+
+            h2{
+                font-size: 8vw;
+            }
+
+            p{
+                font-size: 2vw;
+            }
+        }
+    }
+
+}

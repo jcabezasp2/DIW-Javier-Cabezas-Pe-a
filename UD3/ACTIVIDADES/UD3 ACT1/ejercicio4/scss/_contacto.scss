@@ -20,3 +20,14 @@ section#contacto{
     }
     
 }
+
+@include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"md"),2)){
+
+    section#contacto{
+        h1{
+            font-size: 4vw;
+            padding: 3% 0
+        }
+    }
+
+}
