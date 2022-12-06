@@ -1,0 +1,34 @@
+footer{
+    padding:$tam-base;
+    background-color: $color-fondo-cabecera;
+    #nombre{
+        text-align: right;
+    }
+}
+
+@include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"md"),2)){
+
+    footer.contenedor{
+        p:first-child, #nombre {
+           font-size: 3vw;
+           line-height: unset;
+           text-align: center;
+           padding: 1% 0;
+        }
+    }
+
+
+}
+
+@include breakpoint(nth(map-get($breakpoints,"sm"),1),nth(map-get($breakpoints,"sm"),2)){
+
+    footer.contenedor{
+        p:first-child, #nombre {
+           font-size: 4vw;
+           line-height: unset;
+           text-align: center;
+           padding: 1% 0;
+        }
+    }
+
+}

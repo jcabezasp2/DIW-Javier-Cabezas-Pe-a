@@ -1,0 +1,166 @@
+@use "sass:math";
+
+
+header{
+    background-color: $color-fondo-cabecera;
+    padding:$tam-base;
+
+    
+    #titulo{
+      
+        h1{
+            font-size:$tam-base*3;
+            letter-spacing: -1px;
+            width: max-content;
+            span{
+                color:$color-bolsos;
+               
+            }
+        }
+        p{
+            color:$color-secundario;
+            font-size:$tam-base*1.5;
+            width: max-content;
+        }
+    }
+
+    nav{
+       
+
+        ul{
+         
+          gap:$tam-base;
+            li{
+                font-size:$tam-base*1.5;
+                width: max-content;
+                text-align:center;
+                &#activo{
+                    font-weight: bold;
+                }
+               
+            }
+          
+        }
+
+        #social{
+           
+            i{
+            font-size:$tam-base*2;
+            color:$color-secundario;
+          
+            }
+        }
+    }
+}
+
+
+#menu-responsive li:not(:first-child){
+    display:none;
+}
+
+@include breakpoint(nth(map-get($breakpoints,"xl"),1),nth(map-get($breakpoints,"xl"),2)){
+    header{
+        p{
+            align-self: center;
+        }
+    }
+    
+    nav{
+        align-content: center;
+        ul{
+            column-gap: 2.2vw !important;
+        }
+    }
+
+    #social{
+        column-gap: 0.3vw;
+    }
+
+    #hamburguesa{
+        display:none;
+        visibility: hidden;
+    }
+
+    #menu-responsive li:not(:first-child){
+        display:block !important;
+    }
+}
+
+@include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"md"),2)){
+    header{
+        #titulo{
+            a{
+                h1{
+                    font-size: 4vw;
+                }
+
+            }
+            p{
+                font-size: 2.5vw;
+                align-self: center;
+            }
+        }
+        nav{
+            align-content: center;
+            ul{
+                li{
+                    font-size: 2.5vw;
+                }     
+            }
+        }
+    }
+    
+    #hamburguesa{
+        display:none;
+        visibility: hidden;
+    }
+
+    #menu-responsive li:not(:first-child){
+        display:block !important;
+    }
+
+}
+
+
+@include breakpoint(nth(map-get($breakpoints,"sm"),1),nth(map-get($breakpoints,"sm"),2)){
+    
+    header{
+        #titulo{
+            a{
+                h1{
+                    font-size: 8vw;
+                }
+
+            }
+            p{
+                font-size: 5vw;
+                align-self: center;
+            }
+        }
+        nav{
+            align-content: center;
+            ul{
+                li{
+                    font-size: 4vw;
+                }     
+            }
+        }
+    }
+    
+    #menu-responsive{
+        justify-items: center;
+    }
+    
+    #hamburguesa{
+        padding: 2% 0;
+    }
+
+    .responsive li{
+        display:block !important;    
+      }
+  } 
+
+
+
+
+

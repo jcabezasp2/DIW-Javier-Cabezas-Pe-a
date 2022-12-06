@@ -1,0 +1,89 @@
+@use "sass:math";
+
+ section#principal{
+   row-gap: 0;
+   column-gap: 0;
+    article{
+        padding:$tam-base;
+        grid-template-rows: auto auto 1fr;
+        h2{
+            font-size:$tam-base*4.5;
+            padding-bottom:math.div($tam-base,2);
+        }
+        .fecha{
+            font-size:$tam-base*2; 
+            justify-self: end;
+        }
+        p{
+            line-height: 125%;
+        }
+    }
+
+     img{
+         width: 100%;
+         height:100%;
+     }
+     #bolsos{
+         background-color: $color-bolsos;
+     }
+
+     #gafas{
+        background-color: $color-gafas;
+    }
+
+    #moda{
+        background-color: $color-moda;
+    }
+
+    #peinados{
+        background-color: $color-peinados;
+    }
+
+    #barato{
+        background-color: $color-barato;
+    }
+
+ }
+
+ @include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"md"),2)){
+
+    section#principal{
+        row-gap: 1em;
+        article{
+            padding: 1.5vw;
+            .fecha{
+                font-size: 4vw;
+            }
+
+            h2{
+                font-size: 8vw;
+            }
+
+            p{
+                font-size: 2vw;
+            }
+        }
+    }
+
+}
+
+@include breakpoint(nth(map-get($breakpoints,"sm"),1),nth(map-get($breakpoints,"sm"),2)){
+
+    section#principal{
+        article{
+            padding: 2.5vw;
+            .fecha{
+                font-size: 6vw;
+            }
+
+            h2{
+                font-size: 10vw;
+            }
+
+            p{
+                font-size: 5vw;
+            }
+        }
+    }
+
+}
