@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Introduce tus datos</h1>
+        <form action="" class="row">
+            <div class="col-md-6 d-flex flex-column">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre">
+            </div>
+
+            <div class="col-md-6 d-flex flex-column">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Introduce tus apellidos">
+            </div>
+
+            <div class="col-md-6 d-flex flex-column">
+                <label for="email">Correo electronico</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com">
+            </div>
+
+            <div class="col-md-6 d-flex flex-column">
+                <label for="foto">Fotografia de perfil</label>
+                <input type="file" name="foto" id="foto">
+            </div>
+
+            <div class="col-md-12">
+                <textarea name="comentario" id="comentario" cols="120" rows="10" placeholder="¿Que nos quieres contar?"></textarea>
+            </div>
+            
+            <div class="col-md-6 d-flex flex-column">
+                <p>Genero</p>
+                <div>
+                    <input type="radio" name="Masculino" id="Masculino">
+                    <label for="Masculino">Masculino</label>
+                </div>
+                <div>
+                    <input type="radio" name="Femenino" id="Femenino">
+                    <label for="Femenino">Femenino</label>
+                </div>
+                <div>
+                    <input type="radio" name="nb" id="nb">
+                    <label for="nb">No binario</label>
+                </div>
+                <div>
+                    <input type="radio" name="pnd" id="pnd">
+                    <label for="pnd">Prefiero no decirlo</label>
+                </div>
+            </div>
+
+            <div class="col-md-6 d-flex flex-column">
+                <label for="provincia">Provincia</label>
+                <select name="provincia" id="provincia">
+                    <option value="badajoz">Badajoz</option>
+                    <option value="asturias">Asturias</option>
+                    <option value="cantabria">Cantabria</option>
+                    <option value="madrid">Madrid</option>
+                </select>
+            </div>
+
+            <div class="col-md-12">
+                <input type="checkbox" name="acepto" id="acepto">
+                <label for="acepto">Acepto terminos y condiciones</label>
+            </div>
+            
+            <div class="col-md-9">
+                <button class="btn btn-success w-100" type="submit">Enviar</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
