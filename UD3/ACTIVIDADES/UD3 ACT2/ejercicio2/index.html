@@ -8,56 +8,56 @@
     <title>Ejercicio 2</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container  bg-light">
         <h1 class="text-center">Introduce tus datos</h1>
-        <form action="" class="row">
+        <form action="" class="row g-4 justify-content-center">
             <div class="col-md-6 d-flex flex-column">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre">
+                <label class="form-label" for="nombre">Nombre</label>
+                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre">
             </div>
 
             <div class="col-md-6 d-flex flex-column">
-                <label for="apellidos">Apellidos</label>
-                <input type="text" name="apellidos" id="apellidos" placeholder="Introduce tus apellidos">
+                <label class="form-label" for="apellidos">Apellidos</label>
+                <input class="form-control" type="text" name="apellidos" id="apellidos" placeholder="Introduce tus apellidos">
             </div>
 
             <div class="col-md-6 d-flex flex-column">
-                <label for="email">Correo electronico</label>
-                <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                <label class="form-label" for="email">Correo electronico</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="example@gmail.com">
             </div>
 
             <div class="col-md-6 d-flex flex-column">
-                <label for="foto">Fotografia de perfil</label>
-                <input type="file" name="foto" id="foto">
+                <label class="form-label" for="formFile">Fotografia de perfil</label>
+                <input class="form-control" type="file" name="foto" id="formFile">
             </div>
 
-            <div class="col-md-12">
-                <textarea name="comentario" id="comentario" cols="120" rows="10" placeholder="¿Que nos quieres contar?"></textarea>
+            <div class="col-md-12 pt-4">
+                <textarea class="p-3 form-control" name="comentario" id="comentario" cols="120" rows="3" placeholder="¿Que nos quieres contar?"></textarea>
             </div>
-            
-            <div class="col-md-6 d-flex flex-column">
-                <p>Genero</p>
-                <div>
-                    <input type="radio" name="Masculino" id="Masculino">
-                    <label for="Masculino">Masculino</label>
+
+            <div class="col-sm-6 d-flex flex-column">
+                <p class="form-label">Genero</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Masculino" id="Masculino">
+                    <label class="form-check-label" for="Masculino">Masculino</label>
                 </div>
-                <div>
-                    <input type="radio" name="Femenino" id="Femenino">
-                    <label for="Femenino">Femenino</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Femenino" id="Femenino">
+                    <label class="form-check-label" for="Femenino">Femenino</label>
                 </div>
-                <div>
-                    <input type="radio" name="nb" id="nb">
-                    <label for="nb">No binario</label>
+                <div  class="form-check">
+                    <input class="form-check-input" type="radio" name="nb" id="nb">
+                    <label class="form-check-label" for="nb">No binario</label>
                 </div>
-                <div>
-                    <input type="radio" name="pnd" id="pnd">
-                    <label for="pnd">Prefiero no decirlo</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pnd" id="pnd">
+                    <label class="form-check-label" for="pnd">Prefiero no decirlo</label>
                 </div>
             </div>
 
-            <div class="col-md-6 d-flex flex-column">
-                <label for="provincia">Provincia</label>
-                <select name="provincia" id="provincia">
+            <div class="col-sm-6 col-md-4 d-flex flex-column">
+                <label class="form-label" for="provincia">Provincia</label>
+                <select class="form-select" name="provincia" id="provincia">
                     <option value="badajoz">Badajoz</option>
                     <option value="asturias">Asturias</option>
                     <option value="cantabria">Cantabria</option>
@@ -65,12 +65,12 @@
                 </select>
             </div>
 
-            <div class="col-md-12">
-                <input type="checkbox" name="acepto" id="acepto">
-                <label for="acepto">Acepto terminos y condiciones</label>
+            <div class="col-sm-8 col-md-12 d-flex justify-content-sm-start justify-content-md-center">
+                <input class="form-check-input" type="checkbox" name="acepto" id="acepto">
+                <label class="form-check-label px-2" for="acepto">Acepto terminos y condiciones</label>
             </div>
             
-            <div class="col-md-9">
+            <div class="col-sm-8 col-md-6">
                 <button class="btn btn-success w-100" type="submit">Enviar</button>
             </div>
 
