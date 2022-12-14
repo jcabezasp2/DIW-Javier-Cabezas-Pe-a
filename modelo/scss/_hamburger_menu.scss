@@ -1,0 +1,57 @@
+#menu-responsive li:not(:first-child){
+    display:none;
+}
+
+#hamburguesa{
+    display:none;
+    visibility: hidden;
+}
+
+#menu-responsive li:not(:first-child){
+    display:block !important;
+}
+
+@include breakpoint(nth(map-get($breakpoints,"sm"),1),nth(map-get($breakpoints,"sm"),2)){
+
+    #menu-responsive{
+        justify-items: center;
+    }
+    
+    #hamburguesa{
+        padding: 2% 0;
+        display:block;
+        visibility: visible;
+    }
+
+    #menu-responsive li:not(:first-child){
+        display:none !important;
+    }
+
+    .responsive#menu-responsive {
+         li:not(:first-child){
+            display:block !important;
+        }
+    }
+
+    .responsive li{
+        display:block !important;    
+      }
+
+}
+
+
+
+
+
+
+
+/* <ul id="menu-responsive" class="contenedor">
+    <li class="" id="hamburguesa">&#9776;</li>  
+    <li class="margin-md-1 col-md-3 col-sm-12" >Blog</li>
+    <li class="col-md-3 col-sm-12">Acerca de</li>
+    <li class="col-md-3 col-sm-12">Archivo</li>
+    <li class="col-md-2 col-sm-12">Contacto</li>
+</ul> */
+
+
+//<script src="js/menu-responsive.js"></script>

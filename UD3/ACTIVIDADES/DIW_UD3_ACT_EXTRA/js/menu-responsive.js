@@ -7,4 +7,3 @@ function cargaPagina(){
 function pulsa(){
     document.getElementById("menu-responsive").classList.toggle("responsive");
 }
-console.log("OV");

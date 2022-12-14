@@ -7,7 +7,7 @@
        column-gap: 1em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .col-sm-1 {
     grid-column-end: span 1;
   }
@@ -155,6 +155,93 @@
     display: none !important;
   }
 }
+.padding {
+  padding: 1em;
+}
+
+.padding_large {
+  padding: 3em;
+}
+
+.texto_centrado {
+  text-align: center;
+}
+
+.gap {
+  gap: 1em;
+}
+
+.self_centrado {
+  align-self: center;
+}
+
+.d_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.d_flex_row {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.display_4 {
+  font-size: 2.5em;
+}
+
+.display_3 {
+  font-size: 2em;
+}
+
+.display_2 {
+  font-size: 1.3em;
+}
+
+.padding_bottom {
+  padding-bottom: 1em;
+}
+
+#menu-responsive li:not(:first-child) {
+  display: none;
+}
+
+#hamburguesa {
+  display: none;
+  visibility: hidden;
+}
+
+#menu-responsive li:not(:first-child) {
+  display: block !important;
+}
+
+@media screen and (max-width: 1024px) {
+  #menu-responsive {
+    justify-items: center;
+  }
+  #hamburguesa {
+    padding: 2% 0;
+    display: block;
+    visibility: visible;
+  }
+  #menu-responsive li:not(:first-child) {
+    display: none !important;
+  }
+  .responsive#menu-responsive li:not(:first-child) {
+    display: block !important;
+  }
+  .responsive li {
+    display: block !important;
+  }
+}
+/* <ul id="menu-responsive" class="contenedor">
+    <li class="" id="hamburguesa">&#9776;</li>  
+    <li class="margin-md-1 col-md-3 col-sm-12" >Blog</li>
+    <li class="col-md-3 col-sm-12">Acerca de</li>
+    <li class="col-md-3 col-sm-12">Archivo</li>
+    <li class="col-md-2 col-sm-12">Contacto</li>
+</ul> */
 * {
   font-family: "Roboto";
   font-weight: 100;
@@ -162,7 +249,20 @@
 
 #slider {
   background-image: url("./images/slider/bg1.jpg");
-  padding: 10em;
+  padding: 6em;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slider h2 {
+  font-size: 2em;
+  color: white;
+}
+#slider h2 span {
+  color: #45AED6;
+}
+#slider p {
+  color: white;
+  padding: 1em 0;
 }
 
 #portfolio, .miembro-equipo {
@@ -178,6 +278,9 @@
   color: white;
   background-color: #45AED6;
   padding: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #titulo-pagina {
@@ -196,4 +299,42 @@ nav ul li a {
 header a {
   text-decoration: none;
   color: #45AED6;
+}
+header #menu-responsive {
+  align-self: center;
+}
+
+.cabecera-seccion h2 {
+  font-size: 2em;
+}
+
+.icono-servicio i {
+  border: 1px solid grey;
+  border-radius: 50%;
+  color: #45AED6;
+}
+
+picture {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+footer {
+  color: white;
+}
+
+#meet-team {
+  padding: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+  #slider {
+    padding: 4em 1em;
+  }
+  #meet-team {
+    padding: 0;
+  }
 }

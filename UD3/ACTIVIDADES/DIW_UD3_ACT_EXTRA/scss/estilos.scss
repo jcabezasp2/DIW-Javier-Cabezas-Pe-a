@@ -1,5 +1,7 @@
 @import "_rejilla.scss";
 @import "_variables.scss";
+@import "_generales.scss";
+@import "_hamburger_menu.scss";
 
 *{
     font-family: $tipografia;
@@ -11,7 +13,21 @@ img{
 
 #slider{
     background-image: url("./images/slider/bg1.jpg");
-    padding: 10em;
+    padding: 6em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h2{
+        span{
+            color: $azulin;
+        }
+        font-size: 2em;
+        //ont-weight: 400;
+        color: white;
+    }
+    p{
+        color: white;
+        padding: 1em 0;
+    }
 }
 
 #portfolio, .miembro-equipo{
@@ -27,6 +43,7 @@ img{
     color: white;
     background-color: $azulin;
     padding: 1em;
+    width: fit-content;
 }
 
 #titulo-pagina{
@@ -51,4 +68,51 @@ header {
         text-decoration: none;
         color: $azulin;
     }
+
+    #menu-responsive{
+        align-self: center;
+    }
 }
+
+.cabecera-seccion{
+    h2{
+        font-size: 2em;
+    }
+}
+
+.icono-servicio{
+    i{
+        border: 1px solid grey;
+        border-radius: 50%;
+        color: $azulin;
+    }
+    
+}
+
+picture {
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+footer{
+    color: white;
+}
+
+#meet-team{
+    padding:1em;
+}
+
+
+
+@include breakpoint(nth(map-get($breakpoints,"sm"),1),nth(map-get($breakpoints,"sm"),2)){
+        #slider{
+            padding: 4em 1em;
+        }
+
+        #meet-team{
+            padding:0;
+        }
+     }

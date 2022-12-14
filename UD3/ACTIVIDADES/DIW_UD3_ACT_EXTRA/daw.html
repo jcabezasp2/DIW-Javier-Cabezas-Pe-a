@@ -8,24 +8,26 @@
     <script src="https://kit.fontawesome.com/c43811ca98.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link href="css/estilos.css" rel="stylesheet">
+    <script src="js/menu-responsive.js"></script>
 </head><!--/head-->
 
 <body>
 
-    <header id="header">
+    <header id="header" class="padding">
 
         <nav>
             <div class="contenedor">
-                <a href="daw.html" class="col-lg-8 contenedor">
+                <a href="daw.html" class="col-sm-12 margin-lg-1 col-lg-7 contenedor">
                     <img src="./images/logo.png" id="logo" alt="logo">
                     <div id="titulo-pagina">DAW</div>
                 </a>
 
-                <ul class="menu-principal col-lg-4 contenedor">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#meet-team">Equipo</a></li>
+                <ul class="col-sm-12 col-lg-4 contenedor" id="menu-responsive">
+                    <li class="col-sm-12" id="hamburguesa">&#9776;</li>
+                    <li class="col-sm-12" ><a href="#home">Home</a></li>
+                    <li class="col-sm-12" ><a href="#services">Servicios</a></li>
+                    <li class="col-sm-12" ><a href="#portfolio">Portfolio</a></li>
+                    <li class="col-sm-12" ><a href="#meet-team">Equipo</a></li>
 
                 </ul>
 
@@ -34,24 +36,24 @@
 
     </header><!--/header-->
 
-    <section id="slider">
+    <section id="slider" class="d_flex">
             <h2 class="col-lg-4"><span>DAW</span> es la solución que necesitas</h2>
             <p class="col-lg-4">Soluciones a medida para tu negocio</p>
             <a class="boton" href="#">Leer más</a>
     </section><!-- slider -->
 
 
-    <section id="services" class="contenedor">
+    <section id="services" class="contenedor padding_large">
 
-        <div class="cabecera-seccion col-lg-12">
-            <h2>Algunos de nuestros servicios</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore
+        <div class="cabecera-seccion col-sm-12 col-lg-12 texto_centrado">
+            <h2 class="padding display_2">Algunos de nuestros servicios</h2>
+            <p class="padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore
                 magna aliqua. Ut enim ad minim veniam</p>
         </div>
 
-        <div class="servicio col-lg-4">
-            <div class="icono-servicio">
-                <i class="fa-solid fa-bar-chart"></i>
+        <div class="servicio col-sm-12 col-lg-4">
+            <div class="icono-servicio d_flex_row">
+                <i class="fa-solid fa-bar-chart padding"></i>
                 <div class="texto-servicio">
                     <h4>UX</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -59,9 +61,9 @@
             </div>
         </div><!--/.servicio-->
 
-        <div class="servicio col-lg-4">
-            <div class="icono-servicio">
-                <i class="fa-solid fa-cubes"></i>
+        <div class="servicio col-sm-12 col-lg-4">
+            <div class="icono-servicio  d_flex_row">
+                <i class="fa-solid fa-cubes padding"></i>
                 <div class="texto-servicio">
                     <h4>UI</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -69,9 +71,9 @@
             </div>
         </div><!--/.servicio-->
 
-        <div class="servicio col-lg-4">
-            <div class="icono-servicio">
-                <i class="fa-solid fa-pie-chart"></i>
+        <div class="servicio col-sm-12 col-lg-4">
+            <div class="icono-servicio  d_flex_row">
+                <i class="fa-solid fa-pie-chart padding"></i>
                 <div class="texto-servicio">
                     <h4>SEO</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -79,9 +81,9 @@
             </div>
         </div><!--/.servicio-->
 
-        <div class="servicio col-lg-4">
-            <div class="icono-servicio">
-                <i class="fa-solid fa-bar-chart"></i>
+        <div class="servicio col-sm-12 col-lg-4">
+            <div class="icono-servicio  d_flex_row">
+                <i class="fa-solid fa-bar-chart padding"></i>
                 <div class="texto-servicio">
                     <h4>iOS</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -89,9 +91,9 @@
             </div>
         </div><!--/.servicio-->
 
-        <div class="servicio col-lg-4">
-            <div class="icono-servicio">
-                <i class="fa-light fa-languaje"></i>
+        <div class="servicio col-sm-12 col-lg-4">
+            <div class="icono-servicio  d_flex_row">
+                <i class="fa-solid fa-language padding"></i>
                 <div class="texto-servicio">
                     <h4>Android</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -99,9 +101,9 @@
             </div>
         </div><!--/.servicio-->
 
-        <div class="servicio col-lg-4">
-            <div class="icono-servicio">
-                <i class="fa-solid fa-bullseye"></i>
+        <div class="servicio col-sm-12 col-lg-4">
+            <div class="icono-servicio d_flex_row">
+                <i class="fa-solid fa-bullseye padding"></i>
                 <div class="texto-servicio">
                     <h4>Windows</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -111,33 +113,33 @@
 
     </section><!--/#services-->
 
-    <section id="portfolio" class="contenedor">
+    <section id="portfolio" class="contenedor padding gap">
 
-        <div class="cabecera-seccion col-lg-12">
-            <h2>Portfolio</h2>
+        <div class="cabecera-seccion col-sm-12 col-lg-12 texto_centrado padding">
+            <h2 class="padding display_2">Portfolio</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore
                 magna aliqua. Ut enim ad minim veniam</p>
         </div>
 
-        <div id="portfolio1 col-lg-5">
+        <div id="portfolio1" class="col-sm-12 col-lg-6">
             <picture>
                 <source srcset="images/portfolio/01-small.jpg" media="(max-width: 1024px)">
                 <img src="images/portfolio/01.jpg" alt="">
             </picture>
         </div>
-        <div id="portfolio2 col-lg-5">
+        <div id="portfolio2" class="col-sm-12 col-lg-6">
             <picture>
                 <source srcset="images/portfolio/02-small.jpg" media="(max-width: 1024px)">
                 <img src="images/portfolio/02.jpg" alt="">
             </picture>
         </div>
-        <div id="portfolio3 col-lg-5">
+        <div id="portfolio3" class="col-sm-12 col-lg-6">
             <picture>
                 <source srcset="images/portfolio/03-small.jpg" media="(max-width: 1024px)">
                 <img src="images/portfolio/03.jpg" alt="">
             </picture>
         </div>
-        <div id="portfolio4 col-lg-5">
+        <div id="portfolio4" class="col-sm-12 col-lg-6">
             <picture>
                 <source srcset="images/portfolio/04-small.jpg" media="(max-width: 1024px)">
                 <img src="images/portfolio/04.jpg" alt="">
@@ -150,72 +152,72 @@
 
 
 
-    <section id="meet-team">
+    <section id="meet-team" class="contenedor">
 
-        <div class="cabecera-seccion">
-            <h2>EQUIPO</h2>
+        <div class="cabecera-seccion col-sm-12 col-lg-12 texto_centrado padding">
+            <h2 class="padding display_2">EQUIPO</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore
                 magna aliqua. Ut enim ad minim veniam</p>
         </div>
 
 
-        <div class="miembro-equipo">
+        <div class="miembro-equipo col-sm-12 col-lg-3">
             <div class="team-img">
                 <img src="./images/team/01.jpg" class="imagen-equipo" alt="">
             </div>
-            <div class="team-info">
-                <h3>Bin Burhan</h3>
+            <div class="team-info padding">
+                <h3 class="display_2 padding_bottom">Bin Burhan</h3>
                 <span>Director comercial</span>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et
+            <p class="padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et
                 dolore magna aliqua. Ut enim ad minim veniam</p>
         </div>
 
-        <div class="miembro-equipo">
+        <div class="miembro-equipo col-sm-12 col-lg-3">
+            <div class="team-img">
+                <img src="./images/team/02.jpg" class="imagen-equipo" alt="">
+            </div>
+            <div class="team-info padding">
+                <h3 class="display_2 padding_bottom">Jane Man</h3>
+                <span>Gestión de proyectos</span>
+            </div>
+            <p class="padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et
+                dolore magna aliqua. Ut enim ad minim veniam</p>
+        </div>
+
+        <div class="miembro-equipo col-sm-12 col-lg-3">
             <div class="team-img">
                 <img src="./images/team/03.jpg" class="imagen-equipo" alt="">
             </div>
-            <div class="team-info">
-                <h3>Jane Man</h3>
-                <span>Gestión de proyectos</span>
+            <div class="team-info padding">
+                <h3 class="display_2 padding_bottom">Pahlwan</h3>
+                <span>Diseñador</span>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et
+            <p class="padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et
                 dolore magna aliqua. Ut enim ad minim veniam</p>
         </div>
 
-        <div class="miembro-equipo">
+        <div class="miembro-equipo col-sm-12 col-lg-3">
             <div class="team-img">
                 <img src="./images/team/04.jpg" class="imagen-equipo" alt="">
             </div>
-            <div class="team-info">
-                <h3>Pahlwan</h3>
-                <span>Diseñador</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et
-                dolore magna aliqua. Ut enim ad minim veniam</p>
-        </div>
-
-        <div class="miembro-equipo">
-            <div class="team-img">
-                <img class="imagen-equipo" alt="">
-            </div>
-            <div class="team-info">
-                <h3>Nasir Uddin</h3>
+            <div class="team-info padding">
+                <h3 class="display_2 padding_bottom">Nasir Uddin</h3>
                 <span>Programador</span>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et
+            <p class="padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et
                 dolore magna aliqua. Ut enim ad minim veniam</p>
         </div>
     </section><!--/#meet-team-->
 
 
-    <footer id="footer">
+    <footer id="footer" class="contenedor padding">
 
-        <div class="copyright">
+        <div class="copyright col-sm-12 col-lg-8">
             &copy; 2022 DIW Segunda Evaluación.
         </div>
 
-        <ul class="iconos-social">
+        <ul class="iconos-social col-sm-12 col-lg-4 d_flex_row">
             <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
