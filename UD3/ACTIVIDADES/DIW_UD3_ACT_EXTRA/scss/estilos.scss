@@ -1,0 +1,54 @@
+@import "_rejilla.scss";
+@import "_variables.scss";
+
+*{
+    font-family: $tipografia;
+    font-weight: 100;
+}
+img{
+   // width: 100%;
+}
+
+#slider{
+    background-image: url("./images/slider/bg1.jpg");
+    padding: 10em;
+}
+
+#portfolio, .miembro-equipo{
+    background-color: $blanco;
+}
+
+#footer{
+    background-color: $negro;
+}
+
+.boton{
+    text-decoration: none;
+    color: white;
+    background-color: $azulin;
+    padding: 1em;
+}
+
+#titulo-pagina{
+    align-self: center;
+    font-size: 1.3em;
+}
+
+nav{
+    ul{
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+header {
+    a{
+        text-decoration: none;
+        color: $azulin;
+    }
+}
