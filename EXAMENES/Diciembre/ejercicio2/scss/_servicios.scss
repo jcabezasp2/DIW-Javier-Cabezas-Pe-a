@@ -1,0 +1,38 @@
+#servicios{
+    padding:2*$tam-base;
+    gap: 2em;
+    article{
+        i{
+            font-size:2*$tam-base;
+            color:$color-botones;
+            align-self: center;
+        }
+        h4{
+            color:$color-botones;
+            padding: 1em;
+        }
+        p{
+            color:$color-titulo;
+        }
+    }
+}
+
+@include breakpoint(nth(map-get($breakpoints,"sm"),1),nth(map-get($breakpoints,"sm"),2)){
+
+    #servicios{
+
+        article{
+            i{
+                align-self: center;
+                justify-self: center;
+                font-size: 3*$tam-base;
+            }
+            h4{
+
+            }
+            p{
+  
+            }
+        }
+    }
+}

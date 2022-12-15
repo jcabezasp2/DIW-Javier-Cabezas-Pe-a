@@ -1,0 +1,18 @@
+#servicios{
+    padding:2*$tam-base;
+    gap: 2em;
+    article{
+        i{
+            font-size:2*$tam-base;
+            color:$color-botones;
+            align-self: center;
+        }
+        h4{
+            color:$color-botones;
+            padding: 1em;
+        }
+        p{
+            color:$color-titulo;
+        }
+    }
+}

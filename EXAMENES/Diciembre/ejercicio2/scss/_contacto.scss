@@ -1,0 +1,64 @@
+@use "sass:math";
+
+#contacto{
+    text-align: center;
+    h3{
+        font-size:2*$tam-base;
+        padding: 1em;
+    }
+
+    button{
+        background-color: $color-botones;
+        color:$color-letra1; 
+        padding: 0.7em 3em;
+    }
+
+    #formulario-contacto{
+        background-color:$color-fondo-portfolio;
+        font-family:$tipografia !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:2em;
+        gap: 1em;
+        textarea{
+            resize: none;
+            font-family:$tipografia !important;
+            padding:math.div($tam-base,2);
+            width:100%;
+        }
+
+        input{
+            font-family:$tipografia !important;
+            padding:math.div($tam-base,2);
+            width:100%;
+        }
+    }
+}
+
+@include breakpoint(nth(map-get($breakpoints,"sm"),1),nth(map-get($breakpoints,"sm"),2)){
+
+    #contacto{
+        h3{
+            font-size: 3*$tam-base;
+        }
+    
+        button{
+            width: 100%;
+        }
+    
+        #formulario-contacto{
+
+            textarea{
+
+            }
+    
+            input{
+
+            }
+        }
+    }
+
+
+}

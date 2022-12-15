@@ -1,0 +1,40 @@
+#about{
+    background-image: url("./img/sobre_mi.jpg");
+    padding: 2em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    #texto-about{
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+        h3{
+            font-size:2*$tam-base;
+            text-align: center;
+            padding-bottom: 0.5em;
+        }
+
+        a{
+            background-color: $color-botones;
+            color:$color-letra1;
+            width: min-content;
+            padding: 1em;
+            align-self: center;
+        }
+    }
+} 
+
+@include breakpoint(nth(map-get($breakpoints,"sm"),1),nth(map-get($breakpoints,"sm"),2)){
+
+    #about{
+        background-image: url("./img/sobre_mi-sm.jpg");
+        #texto-about{
+
+            h3{
+                font-size: 3*$tam-base;
+            }
+        }
+    } 
+
+
+
+}

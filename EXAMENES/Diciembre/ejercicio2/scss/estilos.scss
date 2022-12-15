@@ -1,0 +1,22 @@
+
+@import "_globales.scss";
+@import "_rejilla.scss";
+
+
+@import "_cabecera.scss"; 
+@import "_servicios.scss"; 
+@import "_portfolio.scss";
+@import "_about.scss";
+@import "_contacto.scss";
+@import "_hamburger_menu.scss";
+
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
+*{
+    font-family: $tipografia;
+   // font-weight: 100;
+}
