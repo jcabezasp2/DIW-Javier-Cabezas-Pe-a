@@ -12,24 +12,26 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="bg-black" id="arriba">
             <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-black">
-                    <div>
-                        <h5>Acerca de</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis rem dolorem ullam fugiat necessitatibus, aperiam at adipisci nisi eveniet dolore ex provident a ab sunt fugit! Eius accusamus accusantium repellat?</p>
+                <div class="container d-flex gap-4 p-3">
+                    <div class="col-8">
+                        <h5 class="text-white">Acerca de</h5>
+                        <p class="text-dark-emphasis">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Perferendis rem dolorem ullam fugiat necessitatibus, aperiam at adipisci nisi eveniet dolore
+                            ex provident a ab sunt fugit! Eius accusamus accusantium repellat?</p>
                     </div>
                     <div>
-                        <h5>Contacto</h5>
-                        <ul>
-                            <li><a href="#">Siguenos en Twitter</a></li>
-                            <li><a href="#">Like en facebook</a></li>
-                            <li><a href="#">Envianos un correo</a></li>
+                        <h5 class="text-white">Contacto</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Siguenos en Twitter</a></li>
+                            <li><a href="#" class="text-white">Like en facebook</a></li>
+                            <li><a href="#" class="text-white">Envianos un correo</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid bg-black">
+            <div class="container d-flex justify-content-between p-2">
                 <a href="#" class="navbar-brand text-white">
                     <i class="bi bi-camera"></i>
                     <span>Album</span>
@@ -44,147 +46,185 @@
     </header>
 
     <main>
-        <section>
-            <h1>Ejemplo de Album</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum impedit totam officiis illo tempore
+        <section class="container text-center py-5">
+            <h1 class="display-3">Ejemplo de Album</h1>
+            <p class="text-dark-emphasis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum impedit totam
+                officiis illo tempore
                 quaerat, hic cupiditate ullam consectetur, repellat temporibus culpa distinctio labore aspernatur eius
                 quibusdam, veniam est animi.</p>
             <a class="btn btn-primary" href="#">Main call to action</a>
             <a class="btn btn-secondary" href="#">Secondary call to action</a>
         </section>
 
-        <section>
-            <div class="card">
-                <picture class="card-img-top">
-                    <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
-                    <source srcset="img/652-400x400.jpg" media="(min-width:600px) and (max-width:1024px)">
-                    <source srcset="img/613-800x800.jpg" media="(min-width:1024px)">  -->
-                    <img src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+3" />
-                </picture>
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corrupti cumque
-                        rerum exercitationem quam eum voluptate molestiae consequuntur voluptates tempora, recusandae
-                        aperiam pariatur, ex odit velit in autem suscipit blanditiis.</p>
-                    <div>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-outline-secondary">Ver</button>
-                            <button type="button" class="btn btn-outline-secondary">Editar</button>
+        <section class="bg-light">
+            <div class="container py-5">
+                <div class="row row-cols-3 g-3">
+                    <div class="col">
+                        <div class="card rounded-1">
+                            <picture class="card-img-top">
+                                <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
+                                <source srcset="img/652-400x400.jpg" media="(min-width:600px) and (max-width:1024px)">
+                                <source srcset="img/613-800x800.jpg" media="(min-width:1024px)">  -->
+                                <img class="w-100 rounded-top-1"
+                                    src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+3" />
+                            </picture>
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                                    corrupti
+                                    cumque
+                                    rerum exercitationem quam eum voluptate molestiae consequuntur voluptates tempora,
+                                    recusandae
+                                    aperiam pariatur, ex odit velit in autem suscipit blanditiis.</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-secondary">Ver</button>
+                                        <button type="button" class="btn btn-outline-secondary">Editar</button>
+                                    </div>
+                                    <span class="align-self-center text-dark-emphasis">9 min</span>
+                                </div>
+                            </div>
                         </div>
-                        <span>9 min</span>
                     </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <picture class="card-img-top">
-                    <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
+                    <div class="col">
+                        <div class="card rounded-1">
+                            <picture class="card-img-top">
+                                <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
                     <source srcset="img/652-400x400.jpg" media="(min-width:600px) and (max-width:1024px)">
                     <source srcset="img/613-800x800.jpg" media="(min-width:1024px)">  -->
-                    <img src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+4" />
-                </picture>
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corrupti cumque
-                        rerum exercitationem quam eum voluptate molestiae consequuntur voluptates tempora, recusandae
-                        aperiam pariatur, ex odit velit in autem suscipit blanditiis.</p>
-                    <div>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-outline-secondary">Ver</button>
-                            <button type="button" class="btn btn-outline-secondary">Editar</button>
+                                <img class="w-100 rounded-top-1"
+                                    src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+4" />
+                            </picture>
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                                    corrupti
+                                    cumque
+                                    rerum exercitationem quam eum voluptate molestiae consequuntur voluptates tempora,
+                                    recusandae
+                                    aperiam pariatur, ex odit velit in autem suscipit blanditiis.</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-secondary">Ver</button>
+                                        <button type="button" class="btn btn-outline-secondary">Editar</button>
+                                    </div>
+                                    <span class="align-self-center text-dark-emphasis">9 min</span>
+                                </div>
+                            </div>
                         </div>
-                        <span>9 min</span>
                     </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <picture class="card-img-top">
-                    <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
-                    <source srcset="img/652-400x400.jpg" media="(min-width:600px) and (max-width:1024px)">
-                    <source srcset="img/613-800x800.jpg" media="(min-width:1024px)">  -->
-                    <img src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+5" />
-                </picture>
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corrupti cumque
-                        rerum exercitationem quam eum voluptate molestiae consequuntur voluptates tempora, recusandae
-                        aperiam pariatur, ex odit velit in autem suscipit blanditiis.</p>
-                    <div>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-outline-secondary">Ver</button>
-                            <button type="button" class="btn btn-outline-secondary">Editar</button>
+                    <div class="col">
+                        <div class="card rounded-1">
+                            <picture class="card-img-top">
+                                <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
+                                <source srcset="img/652-400x400.jpg" media="(min-width:600px) and (max-width:1024px)">
+                                <source srcset="img/613-800x800.jpg" media="(min-width:1024px)">  -->
+                                <img class="w-100 rounded-top-1"
+                                    src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+5" />
+                            </picture>
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                                    corrupti
+                                    cumque
+                                    rerum exercitationem quam eum voluptate molestiae consequuntur voluptates tempora,
+                                    recusandae
+                                    aperiam pariatur, ex odit velit in autem suscipit blanditiis.</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-secondary">Ver</button>
+                                        <button type="button" class="btn btn-outline-secondary">Editar</button>
+                                    </div>
+                                    <span class="align-self-center text-dark-emphasis">9 min</span>
+                                </div>
+                            </div>
                         </div>
-                        <span>9 min</span>
                     </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <picture class="card-img-top">
-                    <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
-                    <source srcset="img/652-400x400.jpg" media="(min-width:600px) and (max-width:1024px)">
-                    <source srcset="img/613-800x800.jpg" media="(min-width:1024px)">  -->
-                    <img src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+6" />
-                </picture>
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corrupti cumque
-                        rerum exercitationem quam eum voluptate molestiae consequuntur voluptates tempora, recusandae
-                        aperiam pariatur, ex odit velit in autem suscipit blanditiis.</p>
-                    <div>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-outline-secondary">Ver</button>
-                            <button type="button" class="btn btn-outline-secondary">Editar</button>
+                    <div class="col">
+                        <div class="card rounded-1">
+                            <picture class="card-img-top">
+                                <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
+                                <source srcset="img/652-400x400.jpg" media="(min-width:600px) and (max-width:1024px)">
+                                <source srcset="img/613-800x800.jpg" media="(min-width:1024px)">  -->
+                                <img class="w-100 rounded-top-1"
+                                    src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+6" />
+                            </picture>
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                                    corrupti
+                                    cumque
+                                    rerum exercitationem quam eum voluptate molestiae consequuntur voluptates tempora,
+                                    recusandae
+                                    aperiam pariatur, ex odit velit in autem suscipit blanditiis.</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-secondary">Ver</button>
+                                        <button type="button" class="btn btn-outline-secondary">Editar</button>
+                                    </div>
+                                    <span class="align-self-center text-dark-emphasis">9 min</span>
+                                </div>
+                            </div>
                         </div>
-                        <span>9 min</span>
                     </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <picture class="card-img-top">
-                    <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
+                    <div class="col">
+                        <div class="card rounded-1">
+                            <picture class="card-img-top">
+                                <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
                     <source srcset="img/652-400x400.jpg" media="(min-width:600px) and (max-width:1024px)">
                     <source srcset="img/613-800x800.jpg" media="(min-width:1024px)">  -->
-                    <img src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+4" />
-                </picture>
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corrupti cumque
-                        rerum exercitationem quam eum voluptate molestiae consequuntur voluptates tempora, recusandae
-                        aperiam pariatur, ex odit velit in autem suscipit blanditiis.</p>
-                    <div>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-outline-secondary">Ver</button>
-                            <button type="button" class="btn btn-outline-secondary">Editar</button>
+                                <img class="w-100 rounded-top-1"
+                                    src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+4" />
+                            </picture>
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                                    corrupti
+                                    cumque
+                                    rerum exercitationem quam eum voluptate molestiae consequuntur voluptates tempora,
+                                    recusandae
+                                    aperiam pariatur, ex odit velit in autem suscipit blanditiis.</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-secondary">Ver</button>
+                                        <button type="button" class="btn btn-outline-secondary">Editar</button>
+                                    </div>
+                                    <span class="align-self-center text-dark-emphasis">9 min</span>
+                                </div>
+                            </div>
                         </div>
-                        <span>9 min</span>
                     </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <picture class="card-img-top">
-                    <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
+                    <div class="col">
+                        <div class="card rounded-1">
+                            <picture class="card-img-top">
+                                <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
                     <source srcset="img/652-400x400.jpg" media="(min-width:600px) and (max-width:1024px)">
                     <source srcset="img/613-800x800.jpg" media="(min-width:1024px)">  -->
-                    <img src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+5" />
-                </picture>
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corrupti cumque
-                        rerum exercitationem quam eum voluptate molestiae consequuntur voluptates tempora, recusandae
-                        aperiam pariatur, ex odit velit in autem suscipit blanditiis.</p>
-                    <div>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-outline-secondary">Ver</button>
-                            <button type="button" class="btn btn-outline-secondary">Editar</button>
+                                <img class="w-100 rounded-top-1"
+                                    src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+5" />
+                            </picture>
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                                    corrupti
+                                    cumque
+                                    rerum exercitationem quam eum voluptate molestiae consequuntur voluptates tempora,
+                                    recusandae
+                                    aperiam pariatur, ex odit velit in autem suscipit blanditiis.</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-secondary">Ver</button>
+                                        <button type="button" class="btn btn-outline-secondary">Editar</button>
+                                    </div>
+                                    <span class="align-self-center text-dark-emphasis">9 min</span>
+                                </div>
+                            </div>
                         </div>
-                        <span>9 min</span>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-        <a href="">Ir arriba</a><!--Todo implementar-->
+    <footer class="container py-5">
+        <div class="d-flex justify-content-between">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <a href="#arriba">Ir arriba</a>
+        </div>
         <span>Creado por <a href="#">Javier Cabezas</a></span>
     </footer>
 
