@@ -48,7 +48,7 @@
     <main>
         <section class="container text-center py-5">
             <h1 class="display-3">Ejemplo de Album</h1>
-            <p class="text-dark-emphasis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum impedit totam
+            <p class="text-dark-emphasis col-md-11 col-lg-10 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum impedit totam
                 officiis illo tempore
                 quaerat, hic cupiditate ullam consectetur, repellat temporibus culpa distinctio labore aspernatur eius
                 quibusdam, veniam est animi.</p>
@@ -57,18 +57,22 @@
         </section>
 
         <section class="bg-light">
-            <div class="container py-5">
-                <div class="row row-cols-3 g-3">
+            <div class="container py-md-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
                     <div class="col">
-                        <div class="card rounded-1">
-                            <picture class="card-img-top">
-                                <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
-                                <source srcset="img/652-400x400.jpg" media="(min-width:600px) and (max-width:1024px)">
-                                <source srcset="img/613-800x800.jpg" media="(min-width:1024px)">  -->
-                                <img class="w-100 rounded-top-1"
-                                    src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+3" />
+                        <div class="card rounded-1 d-flex flex-row flex-md-column">
+                            <picture class="col-4 col-md-12">
+                                <!--Las tamaños de imagen utilizados, mantienen la maquetacion siempre que no se baje de 
+                                528px el ancho de la pantalla, pienso que es suficiente-->
+                                <source srcset="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+3" media="(min-width:768px)"> 
+                                <img class="w-100 rounded-top-1 img-fluid"
+                                    src="https://via.placeholder.com/250x350/434649/737475/?text=Imagen+3" />
+                                <!--Hice algunos experimentos, y parece que el source no puede tener clases propias y usa las clases del img.
+                                Bootstrap no deja especificar breakpoints para rounded, por lo que hay un pequeño desajuste de las esquinas en
+                                el tamaño pequeño, la solucion que encontre es cambiar el picture por dos img, cada uno con sus clases y que se muestre uno u otro
+                                dependiendo de la resolucion, pero no tengo claro si seria una solucion valida-->
                             </picture>
-                            <div class="card-body">
+                            <div class="card-body col-5 col-md-12">
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
                                     corrupti
                                     cumque
@@ -86,15 +90,14 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card rounded-1">
-                            <picture class="card-img-top">
-                                <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
-                    <source srcset="img/652-400x400.jpg" media="(min-width:600px) and (max-width:1024px)">
-                    <source srcset="img/613-800x800.jpg" media="(min-width:1024px)">  -->
-                                <img class="w-100 rounded-top-1"
-                                    src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+4" />
+                        <div class="card rounded-1 d-flex flex-row flex-md-column">
+                            <picture class="col-4 col-md-12">
+
+                    <source srcset="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+4" media="(min-width:768px)"> 
+                                <img class="w-100 rounded-top-1 img-fluid"
+                                    src="https://via.placeholder.com/250x350/434649/737475/?text=Imagen+4" />
                             </picture>
-                            <div class="card-body">
+                            <div class="card-body col-5 col-md-12">
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
                                     corrupti
                                     cumque
@@ -112,15 +115,13 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card rounded-1">
-                            <picture class="card-img-top">
-                                <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
-                                <source srcset="img/652-400x400.jpg" media="(min-width:600px) and (max-width:1024px)">
-                                <source srcset="img/613-800x800.jpg" media="(min-width:1024px)">  -->
-                                <img class="w-100 rounded-top-1"
-                                    src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+5" />
+                        <div class="card rounded-1 d-flex flex-row flex-md-column">
+                            <picture class="col-4 col-md-12">
+                                <source srcset="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+5" media="(min-width:768px)">
+                                <img class="w-100 rounded-top-1 img-fluid"
+                                    src="https://via.placeholder.com/250x350/434649/737475/?text=Imagen+5" />
                             </picture>
-                            <div class="card-body">
+                            <div class="card-body col-5 col-md-12">
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
                                     corrupti
                                     cumque
@@ -138,15 +139,13 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card rounded-1">
-                            <picture class="card-img-top">
-                                <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
-                                <source srcset="img/652-400x400.jpg" media="(min-width:600px) and (max-width:1024px)">
-                                <source srcset="img/613-800x800.jpg" media="(min-width:1024px)">  -->
-                                <img class="w-100 rounded-top-1"
-                                    src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+6" />
+                        <div class="card rounded-1 d-flex flex-row flex-md-column">
+                            <picture class="col-4 col-md-12">
+                                <source srcset="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+6" media="(min-width:768px)">
+                                <img class="w-100 rounded-top-1 img-fluid"
+                                    src="https://via.placeholder.com/250x350/434649/737475/?text=Imagen+6" />
                             </picture>
-                            <div class="card-body">
+                            <div class="card-body col-5 col-md-12">
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
                                     corrupti
                                     cumque
@@ -164,15 +163,13 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card rounded-1">
-                            <picture class="card-img-top">
-                                <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
-                    <source srcset="img/652-400x400.jpg" media="(min-width:600px) and (max-width:1024px)">
-                    <source srcset="img/613-800x800.jpg" media="(min-width:1024px)">  -->
-                                <img class="w-100 rounded-top-1"
-                                    src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+4" />
+                        <div class="card rounded-1 d-flex flex-row flex-md-column">
+                            <picture class="col-4 col-md-12">
+                    <source srcset="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+4" media="(min-width:768px)">
+                                <img class="w-100 rounded-top-1 img-fluid"
+                                    src="https://via.placeholder.com/250x350/434649/737475/?text=Imagen+4" />
                             </picture>
-                            <div class="card-body">
+                            <div class="card-body col-5 col-md-12">
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
                                     corrupti
                                     cumque
@@ -190,15 +187,13 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card rounded-1">
-                            <picture class="card-img-top">
-                                <!-- <source srcset="img/610-200x200.jpg" media="(max-width: 600px)">
-                    <source srcset="img/652-400x400.jpg" media="(min-width:600px) and (max-width:1024px)">
-                    <source srcset="img/613-800x800.jpg" media="(min-width:1024px)">  -->
-                                <img class="w-100 rounded-top-1"
-                                    src="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+5" />
+                        <div class="card rounded-1 d-flex flex-row flex-md-column">
+                            <picture class="col-4 col-md-12">
+                    <source srcset="https://via.placeholder.com/348x225/434649/737475/?text=Imagen+5" media="(min-width:768px)">
+                                <img class="w-100 rounded-top-1 img-fluid"
+                                    src="https://via.placeholder.com/250x350/434649/737475/?text=Imagen+5" />
                             </picture>
-                            <div class="card-body">
+                            <div class="card-body col-5 col-md-12">
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
                                     corrupti
                                     cumque
@@ -221,6 +216,8 @@
     </main>
 
     <footer class="container py-5">
+        <!--El diseño del footer no queda feo hasta bajar de 500px de ancho, por lo que no considero necesario
+        poner los elementos uno encima de otro en las resoluciones pequeñas-->
         <div class="d-flex justify-content-between">
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
             <a href="#arriba">Ir arriba</a>
