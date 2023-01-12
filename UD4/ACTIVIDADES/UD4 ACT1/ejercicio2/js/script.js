@@ -4,7 +4,7 @@ let jugador1 = {
     edad: 36,
     posicion: 'bateador',
     equipo: 'New South Wales',
-    imagen: 'https://en.wikipedia.org/wiki/File:DAVID_WARNER_(11704782453).jpg'
+    imagen: 'https://upload.wikimedia.org/wikipedia/commons/2/2c/DAVID_WARNER_%2811704782453%29.jpg'
 };
 
 let jugador2 = {
@@ -13,7 +13,7 @@ let jugador2 = {
     edad: 52,
     posicion: 'bateador',
     equipo: 'New South Wales',
-    imagen: 'https://en.wikipedia.org/wiki/File:Glenn_McGrath_in_Circular_Quay,_Sydney,_Australia,_2018-02-03.jpg'
+    imagen: 'https://upload.wikimedia.org/wikipedia/commons/4/4f/Glenn_McGrath_in_Circular_Quay%2C_Sydney%2C_Australia%2C_2018-02-03.jpg'
 };
 
 let jugador3 = {
@@ -21,8 +21,8 @@ let jugador3 = {
     apellidos: 'Akram',
     edad: 56,
     posicion: 'keeper',
-    equipo: 'New South Wales',
-    imagen: 'https://en.wikipedia.org/wiki/File:Wasim-akram-gesf-2018-7878.jpg'
+    equipo: 'Lancashire',
+    imagen: 'https://upload.wikimedia.org/wikipedia/commons/f/f4/Wasim-akram-gesf-2018-7878.jpg'
 };
 
 let array = [jugador1, jugador2, jugador3];

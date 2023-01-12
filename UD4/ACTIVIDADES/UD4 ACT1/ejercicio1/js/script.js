@@ -4,7 +4,7 @@ let jugador1 = {
     edad: 36,
     posicion: 'bateador',
     equipo: 'New South Wales',
-    imagen: 'https://en.wikipedia.org/wiki/File:DAVID_WARNER_(11704782453).jpg'
+    imagen: 'https://upload.wikimedia.org/wikipedia/commons/2/2c/DAVID_WARNER_%2811704782453%29.jpg'
 };
 
 
