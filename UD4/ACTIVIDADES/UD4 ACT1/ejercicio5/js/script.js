@@ -6,7 +6,7 @@ if(localStorage.getItem("jugadores") == null){
         edad: 36,
         posicion: 'bateador',
         equipo: 'New South Wales',
-        imagen: 'https://en.wikipedia.org/wiki/File:DAVID_WARNER_(11704782453).jpg'
+        imagen: 'https://upload.wikimedia.org/wikipedia/commons/2/2c/DAVID_WARNER_%2811704782453%29.jpg'
     };
     
     let jugador2 = {
@@ -58,8 +58,8 @@ if(localStorage.getItem("jugadores") == null){
         quintaLinea.appendChild(document.createTextNode(`Equipo: ${element.equipo}`));
         div.appendChild(quintaLinea);
 
-        let sextaLinea = document.createElement("p");
-        sextaLinea.appendChild(document.createTextNode(`Imagen: ${element.imagen}`));
+        let sextaLinea = document.createElement("img");
+        sextaLinea.setAttribute("src", element.imagen);
         div.appendChild(sextaLinea);
         div.style.border = "1px solid black";
         contenedor.appendChild(div);
