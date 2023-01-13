@@ -70,39 +70,21 @@ function mostrarJugadores(){
     jugadores.forEach(element => {
         //tarjeta
         let div = document.createElement("div");
-        div.setAttribute("class", "card col");
-        // imagen
-        let imagen = document.createElement("img");
-        imagen.setAttribute("src", element.imagen);
-        imagen.setAttribute("class", "card-img-top");
-        div.appendChild(imagen);
+        div.setAttribute("class", "card col p-2");
 
-        //nombre
-        let cardBody = document.createElement("div");
-        let nombre = document.createElement("h5");
-        nombre.appendChild(document.createTextNode(`${element.nombre}`));
-        nombre.setAttribute("class", "card-title text-center");
-        cardBody.appendChild(nombre);
-        div.appendChild(cardBody);
 
         //lista
         let ul = document.createElement("ul");
+
+        //nombre
+        let nombre = document.createElement("li");
+        nombre.appendChild(document.createTextNode(`${element.nombre} ${element.apellidos}`));
+        nombre.setAttribute("class", "list-group-item fs-5");
+        ul.appendChild(nombre);
         
-        //apellidos
-        let segundaLinea = document.createElement("li");
-        segundaLinea.appendChild(document.createTextNode(`Apellidos: ${element.apellidos}`));
-        segundaLinea.setAttribute("class", "list-group-item");
-        ul.appendChild(segundaLinea);
-
-        //edad
-        let terceraLinea = document.createElement("li");
-        terceraLinea.appendChild(document.createTextNode(`Edad: ${element.edad}`));
-        terceraLinea.setAttribute("class", "list-group-item");
-        ul.appendChild(terceraLinea);
-
         //posicion
         let cuartaLinea = document.createElement("li");
-        cuartaLinea.appendChild(document.createTextNode(`Posición: ${element.posicion}`));
+        cuartaLinea.appendChild(document.createTextNode(`${element.posicion}`));
         cuartaLinea.setAttribute("class", "list-group-item");
         ul.appendChild(cuartaLinea);
 
@@ -112,8 +94,14 @@ function mostrarJugadores(){
         quintaLinea.setAttribute("class", "list-group-item");
         ul.appendChild(quintaLinea);
 
-        
         div.appendChild(ul);
+
+         // imagen
+         let imagen = document.createElement("img");
+         imagen.setAttribute("src", element.imagen);
+         imagen.setAttribute("class", "card-img-top");
+         div.appendChild(imagen);
+        
         CONTENEDOR.appendChild(div);
     });
 
