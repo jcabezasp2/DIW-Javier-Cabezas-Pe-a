@@ -29,9 +29,11 @@ function miXHRCambiaEstado(){
 
   function imprimir(respuesta){
     let productos=JSON.parse(respuesta);
-    productos.products.forEach(element => {
+
+    let element = productos.products[Math.floor(Math.random() * productos.products.length)]
+
       let contenedor = document.createElement("div");
-      contenedor.setAttribute("class", "col");
+      contenedor.setAttribute("class", "col-12 col-md-6 col-lg-4");
       let card=document.createElement("div");
       card.setAttribute("class","card");
       contenedor.appendChild(card);
@@ -69,5 +71,4 @@ function miXHRCambiaEstado(){
 
       card.appendChild(ul);
       CONTENEDOR.appendChild(contenedor);
-    });
   }
