@@ -1,5 +1,5 @@
 
-const EXITO = document.querySelector("#alertaExito");
+const ALERTAS = document.querySelector("#alertas");
 
 window.addEventListener('load', init);
 
@@ -17,11 +17,11 @@ function enviar(event) {
 
     if(validar()){
         
-        let firstName = document.querySelector('#nombre').value;
-        let lastName = document.querySelector('#apellidos').value;
-        let age = document.querySelector('#edad').value;
-        let email = document.querySelector('#mail').value;
-        let image = document.querySelector('#url').value;
+        let firstName = document.querySelector('#txtNombre').value;
+        let lastName = document.querySelector('#txtApellidos').value;
+        let age = document.querySelector('#txtEdad').value;
+        let email = document.querySelector('#txtEmail').value;
+        let image = document.querySelector('#txtUrl').value;
 
         let newUser = {firstName, lastName, age, email, image};
 
@@ -35,9 +35,9 @@ function enviar(event) {
         miXHR.send(JSON.stringify(newUser));
 
     }else{
-        EXITO.classList.remove('fade');
-        EXITO.innerHTML = `<p>Ha habido un error al dar de alta al usuario</p>`;
-        EXITO.classList.replace('alert-success', 'alert-danger');
+        ALERTAS.classList.remove('fade');
+        ALERTAS.innerHTML = `<p>Ha habido un error al dar de alta al usuario</p>`;
+        ALERTAS.classList.replace('alert-success', 'alert-danger');
     }
 
 
@@ -66,11 +66,11 @@ function validar(){
 
 function mensajeExito(id){
     try{
-        EXITO.classList.replace('alert-danger','alert-success',);
+        ALERTAS.classList.replace('alert-danger','alert-success',);
     }finally{
 
-        EXITO.classList.remove('fade');
-        EXITO.innerHTML = `<p>Usuario dado de alta con el id ${id}</p>`;
+        ALERTAS.classList.remove('fade');
+        ALERTAS.innerHTML = `<p>Usuario dado de alta con el id ${id}</p>`;
     }
 
 
@@ -81,9 +81,9 @@ function miXHRCambiaEstado(){
         document.querySelector('#spinner').style.display = 'block';
 
       if((this.readyState===4)&&(this.status===200)){
-        let todo=JSON.parse(this.responseText);
+        let respuesta=JSON.parse(this.responseText);
         document.querySelector('#spinner').style.display = 'none';
-        mensajeExito(todo.id);
+        mensajeExito(respuesta.id);
       
   
       }

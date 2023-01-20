@@ -15,6 +15,9 @@ function init() {
         boton.addEventListener('click', () => {
             MODAL.classList.remove('show');
             MODAL.style.display = 'none';
+            document.querySelectorAll('.borrable').forEach((item) => {
+                item.removeChild(item.firstChild);
+            })
         })
     })
 }
@@ -26,11 +29,11 @@ function enviar(event) {
 
     if(validar()){
         
-        let firstName = document.querySelector('#nombre').value;
-        let lastName = document.querySelector('#apellidos').value;
-        let age = document.querySelector('#edad').value;
-        let email = document.querySelector('#mail').value;
-        let image = document.querySelector('#url').value;
+        let firstName = document.querySelector('#txtNombre').value;
+        let lastName = document.querySelector('#txtApellidos').value;
+        let age = document.querySelector('#txtEdad').value;
+        let email = document.querySelector('#txtEmail').value;
+        let image = document.querySelector('#txtUrl').value;
 
         let newUser = {firstName, lastName, age, email, image};
 
@@ -89,9 +92,7 @@ function miXHRCambiaEstado(){
         let todo=JSON.parse(this.responseText);
         document.querySelector('#spinner').style.display = 'none';
         mensajeExito(todo);
-        console.log(todo);
       
-  
       }
 
 
