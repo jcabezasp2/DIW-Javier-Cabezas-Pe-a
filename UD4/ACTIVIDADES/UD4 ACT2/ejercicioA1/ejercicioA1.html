@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script type="module" src="js/script.js"></script>
+  <title>Ejercicio A1</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+
+      <form id="jugador" class="col-10 offset-1  pt-3 row needs-validation" novalidate>
+        <h1 class="display-5">Alta de usuario</h1>
+        <div class="col-lg-6 mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required>
+          <div class="invalid-feedback">
+            Introduce un nombre
+          </div>
+        </div>
+        <div class="col-lg-6 mb-3">
+          <label for="apellidos" class="form-label">Apellidos</label>
+          <input type="text" class="form-control" id="apellidos" required>
+          <div class="invalid-feedback">
+            Introduce un apellido
+          </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+          <label for="edad" class="form-label">Edad</label>
+          <input type="number" class="form-control" min="0" id="edad" required>
+          <div class="invalid-feedback">
+            Introduce una edad
+          </div>
+        </div>
+        <div class="col-lg-8 mb-3">
+          <label for="mail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="mail" required>
+          <div class="invalid-feedback">
+            Introduce un email valido
+          </div>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="url" class="form-label">URL de la imagen</label>
+          <input type="url" class="form-control" id="url" required>
+          <div class="invalid-feedback">
+            Introduce una URL valida
+          </div>
+        </div>
+
+
+        <button type="button" id="btnGuardar" class="col-auto mb-3 me-2  btn btn-primary">Nuevo usuario</button>
+        <button id="spinner" class="col-auto mb-3 btn btn-primary" type="button" disabled>
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+          Cargando...
+        </button>
+      </form>
+    </div>
+    <div id="alertaExito" class="modal-dialog fade modal-dialog-centered">
+      ALGO
+    </div>
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo usuario</h1>
+        <button type="button" class="btn-close cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img id="imagenModal" src="" alt="imagen">
+        <ul class="list-group">
+          <li class="list-group-item">Nombre: <span id="nombreModal"></span></li>
+          <li class="list-group-item">Apellidos: <span id="apellidosModal"></span></li>
+          <li class="list-group-item">Edad: <span id="edadModal"></span></li>
+          <li class="list-group-item">Email: <span id="mailModal"></span></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary cerrar" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>
