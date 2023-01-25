@@ -52,7 +52,7 @@ function mostrarResultados(jsonData) {
         let celda = document.createElement('td');
         let verDetalles = document.createElement('button');
         let icono = document.createElement('i');
-        icono.setAttribute('class', 'bi bi-eye');
+        icono.setAttribute('class', 'bi bi-eye me-2');
         verDetalles.appendChild(icono);
         verDetalles.appendChild(document.createTextNode('Ver detalles'));
         verDetalles.setAttribute('type', 'button');
@@ -65,7 +65,7 @@ function mostrarResultados(jsonData) {
         let editar = document.createElement('btn');
         editar.setAttribute('type', 'button');
         let iconoEditar = document.createElement('i');
-        iconoEditar.setAttribute('class', 'bi bi-pencil');
+        iconoEditar.setAttribute('class', 'bi bi-pencil me-2');
         editar.appendChild(iconoEditar);
         editar.appendChild(document.createTextNode('Editar'));
         editar.setAttribute('class', 'btn btn-warning mx-2');
@@ -76,7 +76,7 @@ function mostrarResultados(jsonData) {
 
         let eliminar = document.createElement('button');
         let iconoEliminar = document.createElement('i');
-        iconoEliminar.setAttribute('class', 'bi bi-trash-fill');
+        iconoEliminar.setAttribute('class', 'bi bi-trash me-2');
         eliminar.appendChild(iconoEliminar);
         eliminar.appendChild(document.createTextNode('Eliminar'));
         eliminar.setAttribute('type', 'button');
