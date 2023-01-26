@@ -30,17 +30,12 @@ function init() {
 
 
 
-function preguntar(){
+async function preguntar(){
 
-    fetch(uri,{ method: 'get' })
-    .then(function(respuesta) { 
-           return respuesta.json() 
-       })
-     .then (function(jsonData) { 
-           mostrarResultados(jsonData);
-       })
-       .catch(function(ex) { 
-           console.error('Error', ex.message) }) 
+    const resultado = await fetch(uri,{ method: 'get' }).catch(function(ex) { 
+        console.error('Error', ex.message) })
+    const jsonData = await resultado.json();
+    mostrarResultados(jsonData);      
 }
 
 function mostrarResultados(jsonData) {
