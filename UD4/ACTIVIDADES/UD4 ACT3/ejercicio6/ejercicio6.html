@@ -29,12 +29,9 @@
                       Menu
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" id="films" href="#">Peliculas</a></li>
-                      <li><a class="dropdown-item" id="people" href="#">Personajes</a></li>
-                      <li><a class="dropdown-item" id="planets" href="#">Planetas</a></li>
-                      <li><a class="dropdown-item" id="species" href="#">Especies</a></li>
-                      <li><a class="dropdown-item" id="starships" href="#">Naves</a></li>
-                      <li><a class="dropdown-item" id="vehicles" href="#">Vehiculos</a></li>
+                      <li><a class="dropdown-item boton" data-id="films" href="#">Peliculas</a></li>
+                      <li><a class="dropdown-item  boton" data-id="people" href="#">Personajes</a></li>
+                      <li><a class="dropdown-item boton" data-id="planets" href="#">Planetas</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -50,7 +47,17 @@
 
     <div class="container-flex p-5">
         <div id="coleccion" class="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-2">
-
+          <div class="col"></div>
+          <div class="col">
+            <button class="boton btn btn-warning" type="button" data-id="films">Peliculas</button>
+          </div>
+          <div class="col">
+            <button class="boton btn btn-warning col" type="button" data-id="people">Personajes</button>
+          </div>
+          <div>
+            <button class="boton btn btn-warning col" type="button" data-id="planets">Planetas</button>
+          </div>
+          
         </div>
     </div>
 

@@ -3,9 +3,9 @@ const coleccion = document.querySelector('#coleccion');
 window.addEventListener('load', init);
 
 function init() {
-document.querySelectorAll('.dropdown-item').forEach(item => {
+document.querySelectorAll('.boton').forEach(item => {
     item.addEventListener('click', (event) => {
-        let eleccion = event.target.id;
+        let eleccion = event.target.getAttribute('data-id');
         coleccion.innerHTML = "";
         llamada(eleccion);
     })
@@ -49,16 +49,7 @@ axios.get(uri)
                         break;
                 case 'films':
                         mostrarPelicula(respuesta.data);
-                        break;
-                case 'species':
-                        mostrarEspecie(respuesta.data);
-                        break;
-                case 'vehicles':
-                        mostrarVehiculo(respuesta.data);
-                        break;
-                case 'starships':
-                        mostrarNave(respuesta.data);
-                        break;                  
+                        break;                
        }
    })
  
@@ -89,7 +80,7 @@ function mostrarPersonaje(personaje){
         //Planeta natal
         clon.querySelector('.dato3').textContent = `Planeta natal: ${nombrePlaneta(personaje.homeworld.split('/')[5])}` ;
         clon.querySelector('.dato3').addEventListener ('click', () => {
-            llamadaElemento(`planets/${personaje.homeworld.split('/')[5]}`)
+            llamadaElemento(personaje.homeworld)
         });
         //Peliculas
         let peliculas = clon.querySelector('.peliculas');
@@ -98,7 +89,7 @@ function mostrarPersonaje(personaje){
             li.textContent = nombrePelicula(pelicula.split('/')[5]);
             li.setAttribute('class', 'list-group-item btn btn-link');
             li.addEventListener('click', () => {
-                llamadaElemento(`films/${pelicula.split('/')[5]}`);
+                llamadaElemento(pelicula);
             });
             peliculas.appendChild(li);
         });
@@ -106,12 +97,57 @@ function mostrarPersonaje(personaje){
         coleccion.appendChild(clon);
 }
 
+function mostrarPlaneta(personaje){
+
+    let template = document.querySelector('#card').content;
+
+    let clon = template.cloneNode(true);
+
+    //Nombre
+    clon.querySelector('.nombre').textContent = `${personaje.name}` ;
+    //Cumpleanos
+    clon.querySelector('.dato1').textContent = `Clima: ${personaje.climate}` ;
+    //genero
+    clon.querySelector('.dato2').textContent = `Gravedad: ${personaje.gravity}` ;
+    //Peliculas
+    let peliculas = clon.querySelector('.peliculas');
+    personaje.films.forEach(pelicula => {
+        let li = document.createElement('li');
+        li.textContent = nombrePelicula(pelicula.split('/')[5]);
+        li.setAttribute('class', 'list-group-item btn btn-link');
+        li.addEventListener('click', () => {
+            llamadaElemento(pelicula);
+        });
+        peliculas.appendChild(li);
+    });
+
+    coleccion.appendChild(clon);
+}
+
+function mostrarPelicula(personaje){
+
+    console.log(personaje)
+     let template = document.querySelector('#card').content;
+ 
+     let clon = template.cloneNode(true);
+ 
+     //Nombre
+     clon.querySelector('.nombre').textContent = `${personaje.title}` ;
+     //Cumpleanos
+     clon.querySelector('.dato1').textContent = `Director: ${personaje.director}` ;
+     //genero
+     clon.querySelector('.dato2').textContent = `Numero: ${personaje.episode_id}` ;
+
+ 
+     coleccion.appendChild(clon);
+ }
 
 
-function llamadaElemento(eleccion, tipo){
 
-    const uri = `https://swapi.dev/api/${eleccion}/?format=json`;
-    console.log(uri);
+function llamadaElemento(eleccion){
+
+    const uri = `${eleccion}?format=json`;
+    console.log(uri)
     axios.get(uri)
     .then(function(respuesta) { 
            mostrar(respuesta.data) 
@@ -128,7 +164,19 @@ function llamadaElemento(eleccion, tipo){
     }
     
     function mostrar(respuesta){
-        console.log(respuesta);
+        coleccion.innerHTML = '';
+        tipo = respuesta.url.split('/')[4];
+        switch(tipo){
+            case 'people':
+                      mostrarPersonaje(respuesta.data);
+                      break;
+              case 'planets':
+                      mostrarPlaneta(respuesta.data);
+                      break;
+              case 'films':
+                      mostrarPelicula(respuesta.data);
+                      break;                
+     }
     }
 
     function nombrePlaneta(numero){
