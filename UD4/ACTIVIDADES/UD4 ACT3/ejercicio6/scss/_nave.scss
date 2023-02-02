@@ -1,0 +1,104 @@
+
+img {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -moz-animation: flight cubic-bezier(0.645, 0.045, 0.355, 1) 3s infinite;
+    -webkit-animation: flight cubic-bezier(0.645, 0.045, 0.355, 1) 3s infinite;
+    animation: flight cubic-bezier(0.645, 0.045, 0.355, 1) 3s infinite;
+    position: absolute;
+    bottom: 20%;
+    left: calc(50% - 64px);
+    z-index: -1;
+  }
+  
+  @-moz-keyframes flight {
+    from, to {
+      -moz-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      margin-left: 0;
+    }
+    25% {
+      -moz-transform: rotateY(20deg);
+      transform: rotateY(20deg);
+    }
+    50% {
+      -moz-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      margin-left: 70px;
+      margin-bottom: 15px;
+    }
+    75% {
+      -moz-transform: rotateY(-25deg);
+      transform: rotateY(-25deg);
+    }
+  }
+  @-webkit-keyframes flight {
+    from, to {
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      margin-left: 0;
+    }
+    25% {
+      -webkit-transform: rotateY(20deg);
+      transform: rotateY(20deg);
+    }
+    50% {
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      margin-left: 70px;
+      margin-bottom: 15px;
+    }
+    75% {
+      -webkit-transform: rotateY(-25deg);
+      transform: rotateY(-25deg);
+    }
+  }
+  @keyframes flight {
+    from, to {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      margin-left: 0;
+    }
+    25% {
+      -moz-transform: rotateY(20deg);
+      -ms-transform: rotateY(20deg);
+      -webkit-transform: rotateY(20deg);
+      transform: rotateY(20deg);
+    }
+    50% {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      margin-left: 70px;
+      margin-bottom: 15px;
+    }
+    75% {
+      -moz-transform: rotateY(-25deg);
+      -ms-transform: rotateY(-25deg);
+      -webkit-transform: rotateY(-25deg);
+      transform: rotateY(-25deg);
+    }
+  }
+  @-moz-keyframes sky {
+    to {
+      background-position: 0 240px;
+    }
+  }
+  @-webkit-keyframes sky {
+    to {
+      background-position: 0 240px;
+    }
+  }
+  @keyframes sky {
+    to {
+      background-position: 0 240px;
+    }
+  }
+  

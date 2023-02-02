@@ -11,6 +11,10 @@ document.querySelectorAll('.boton').forEach(item => {
     })
 });
 
+    document.querySelector('#titulo-principal').addEventListener('click', () => {
+        location.reload();
+    });
+
 }
 
 function llamada(eleccion){
@@ -79,92 +83,66 @@ function mostrarPersonaje(personaje){
         clon.querySelector('.dato2').textContent = `Genero: ${personaje.gender}` ;
         //Planeta natal
         clon.querySelector('.dato3').textContent = `Planeta natal: ${nombrePlaneta(personaje.homeworld.split('/')[5])}` ;
-        clon.querySelector('.dato3').addEventListener ('click', () => {
-            llamadaElemento(personaje.homeworld)
-        });
         //Peliculas
         let peliculas = clon.querySelector('.peliculas');
+        document.querySelector('.titulo').textContent = `Peliculas`;
         personaje.films.forEach(pelicula => {
             let li = document.createElement('li');
             li.textContent = nombrePelicula(pelicula.split('/')[5]);
             li.setAttribute('class', 'list-group-item btn btn-link');
-            li.addEventListener('click', () => {
-                llamadaElemento(pelicula);
-            });
             peliculas.appendChild(li);
         });
 
         coleccion.appendChild(clon);
 }
 
-function mostrarPlaneta(personaje){
+function mostrarPlaneta(planeta){
 
     let template = document.querySelector('#card').content;
 
     let clon = template.cloneNode(true);
 
     //Nombre
-    clon.querySelector('.nombre').textContent = `${personaje.name}` ;
-    //Cumpleanos
-    clon.querySelector('.dato1').textContent = `Clima: ${personaje.climate}` ;
-    //genero
-    clon.querySelector('.dato2').textContent = `Gravedad: ${personaje.gravity}` ;
+    clon.querySelector('.nombre').textContent = `${planeta.name}` ;
+    //Clima
+    clon.querySelector('.dato1').textContent = `Clima: ${planeta.climate}` ;
+    //Gravedad
+    clon.querySelector('.dato2').textContent = `Gravedad: ${planeta.gravity}` ;
     //Peliculas
+    clon.querySelector('.titulo').textContent = `Peliculas`;
     let peliculas = clon.querySelector('.peliculas');
-    personaje.films.forEach(pelicula => {
+    planeta.films.forEach(pelicula => {
         let li = document.createElement('li');
         li.textContent = nombrePelicula(pelicula.split('/')[5]);
         li.setAttribute('class', 'list-group-item btn btn-link');
-        li.addEventListener('click', () => {
-            llamadaElemento(pelicula);
-        });
         peliculas.appendChild(li);
     });
 
     coleccion.appendChild(clon);
 }
 
-function mostrarPelicula(personaje){
+function mostrarPelicula(pelicula){
 
-    console.log(personaje)
      let template = document.querySelector('#card').content;
  
      let clon = template.cloneNode(true);
  
      //Nombre
-     clon.querySelector('.nombre').textContent = `${personaje.title}` ;
-     //Cumpleanos
-     clon.querySelector('.dato1').textContent = `Director: ${personaje.director}` ;
-     //genero
-     clon.querySelector('.dato2').textContent = `Numero: ${personaje.episode_id}` ;
-
- 
+     clon.querySelector('.nombre').textContent = `${pelicula.title}` ;
+     //Director
+     clon.querySelector('.dato1').textContent = `Director: ${pelicula.director}` ;
+     //Orden
+     clon.querySelector('.dato2').textContent = `Numero: ${pelicula.episode_id}` ;
+     //Fecha de estreno
+     clon.querySelector('.dato4').textContent = `Fecha de estreno: ${pelicula.release_date}` ;
+     //Resumen
+     clon.querySelector('.dato5').textContent = `${pelicula.opening_crawl}` ;
      coleccion.appendChild(clon);
  }
 
-
-
-function llamadaElemento(eleccion){
-
-    const uri = `${eleccion}?format=json`;
-    console.log(uri)
-    axios.get(uri)
-    .then(function(respuesta) { 
-           mostrar(respuesta.data) 
-       })
-     
-    .catch(function(response) { 
-       if (!response.status) {
-           console.error('Error: el servidor no responde '+response);
-       }
-       else {
-               console.error('Error '+response.status+': '+response.message);
-           }
-    }); 
-    }
-    
     function mostrar(respuesta){
         coleccion.innerHTML = '';
+        console.log(respuesta.url.split('/')[4])
         tipo = respuesta.url.split('/')[4];
         switch(tipo){
             case 'people':
