@@ -70,7 +70,6 @@ axios.get(uri)
 
 function mostrarPersonaje(personaje){
 
-   
         let template = document.querySelector('#card').content;
 
         let clon = template.cloneNode(true);
@@ -80,12 +79,12 @@ function mostrarPersonaje(personaje){
         //Cumpleanos
         clon.querySelector('.dato1').textContent = `Fecha de nacimiento: ${personaje.birth_year}` ;
         //genero
-        clon.querySelector('.dato2').textContent = `Genero: ${personaje.gender}` ;
+        clon.querySelector('.dato2').textContent = `Genero: ${personaje.gender == 'male' ? 'Masculino' : personaje.gender == 'female'? 'Femenino' : personaje.gender}` ;
         //Planeta natal
         clon.querySelector('.dato3').textContent = `Planeta natal: ${nombrePlaneta(personaje.homeworld.split('/')[5])}` ;
         //Peliculas
         let peliculas = clon.querySelector('.peliculas');
-        document.querySelector('.titulo').textContent = `Peliculas`;
+        clon.querySelector('.titulo').textContent = `Peliculas`;
         personaje.films.forEach(pelicula => {
             let li = document.createElement('li');
             li.textContent = nombrePelicula(pelicula.split('/')[5]);
@@ -139,23 +138,6 @@ function mostrarPelicula(pelicula){
      clon.querySelector('.dato5').textContent = `${pelicula.opening_crawl}` ;
      coleccion.appendChild(clon);
  }
-
-    function mostrar(respuesta){
-        coleccion.innerHTML = '';
-        console.log(respuesta.url.split('/')[4])
-        tipo = respuesta.url.split('/')[4];
-        switch(tipo){
-            case 'people':
-                      mostrarPersonaje(respuesta.data);
-                      break;
-              case 'planets':
-                      mostrarPlaneta(respuesta.data);
-                      break;
-              case 'films':
-                      mostrarPelicula(respuesta.data);
-                      break;                
-     }
-    }
 
     function nombrePlaneta(numero){
         let nombre;

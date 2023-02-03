@@ -1,4 +1,4 @@
-//Evidentemen este codigo no es mio
+//Evidentemente este codigo no es mio
 //Tenia intencion de hacer una imitacion
 //Pero no me salio, y me he quedado sin tiempo
 //Este es el codigo que he encontrado en internet
@@ -73,29 +73,9 @@ $shadows-big:    multiple-box-shadow(100);
     background: transparent;
     box-shadow: $shadows-big;
 }}
-#title{
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
 
-  color: #FFF;
-  text-align: center;
-  font-family: 'lato',sans-serif;
-  font-weight: 300;
-  font-size: 50px;
-  letter-spacing: 10px;
-  
-  margin-top: -60px;
-  padding-left: 10px;
-}  
-  span{
-    background: -webkit-linear-gradient(white, #38495a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
 @keyframes animStar{
   from{	
     transform: translateY(0px)
   }to{		
-    transform: translateY(-2000px)}}
+    transform: translateY(2000px)}}
